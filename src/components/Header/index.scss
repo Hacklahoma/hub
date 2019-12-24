@@ -1,0 +1,32 @@
+.Header {
+    background-image: url('../../images/header-background.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 90vh;
+    min-height: 400px;
+    color: white;
+    position: relative;
+    .content {
+        display: inline-block;
+        vertical-align: middle;
+        margin-top: 80px;
+        // border: 1px solid black;
+        h1 {
+            display: inline-block;
+            position: relative;
+            margin-right: -70px;
+            bottom: 20px;
+            font-size: 4.2em;
+            font-family: "Bebas";
+            font-weight: normal;
+        }
+        img {
+            transform: rotate(-6deg);
+            display: inline-block;
+            vertical-align: middle;
+            position: relative;
+            width: 300px;
+        }
+
+    }
+}

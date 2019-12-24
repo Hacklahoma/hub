@@ -13,6 +13,11 @@
   src: url(./fonts/Avenir/Avenir-Medium.ttf);
   font-weight: normal;
 }
+@font-face {
+  font-family: "Bebas";
+  src: url(./fonts/Bebas/Bebas-Regular.ttf);
+  font-weight: normal;
+}
 
 * {
   margin: 0;

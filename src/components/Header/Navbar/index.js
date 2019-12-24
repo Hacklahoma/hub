@@ -5,7 +5,12 @@ class Navbar extends React.Component {
     render() {
         return(
             <div className="Navbar">
-                Navbar
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Archive</li>
+                    <li>Contact</li>
+                </ul>
             </div>
         );
     }
