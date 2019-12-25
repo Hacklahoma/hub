@@ -10,23 +10,41 @@
         display: inline-block;
         vertical-align: middle;
         margin-top: 80px;
-        // border: 1px solid black;
+        width: 100vw;
+        max-width: 560px;
+        height: 290px;
+        position: relative;
         h1 {
-            display: inline-block;
-            position: relative;
-            margin-right: -70px;
-            bottom: 20px;
+            position: absolute;
+            left: 0;
+            margin-left: 15px;
+            top: 70px;
             font-size: 4.2em;
             font-family: "Bebas";
             font-weight: normal;
         }
         img {
             transform: rotate(-6deg);
-            display: inline-block;
+            position: absolute;
+            right: 0;
             vertical-align: middle;
-            position: relative;
             width: 300px;
         }
 
     }
 }
+
+//
+// Mobile
+// 
+
+// @media only screen and (max-width : 768px) {
+//     .Header {
+//         .content {
+//             h1 {
+//             }
+//             img {
+//             }
+//         }
+//     }
+// }
