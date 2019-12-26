@@ -6,4 +6,10 @@
         font-size: .9em;
         color: white;
     }
+    li:nth-child(1) {
+        margin-left: 0;
+    }
+    li:nth-child(4) {
+        margin-right: 0;
+    }
 }

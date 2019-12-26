@@ -7,12 +7,16 @@ class Header extends React.Component {
         return(
             <div className="Header">
                 <Navbar />
-                <div className="cloud"></div>
-                <div className="cloud"></div>
-                <div className="cloud"></div>
                 <div className="content">
-                    <h1>Hacklahoma</h1>
-                    <img src='./images/flying-logo.png' alt="logo" />
+                    <div className="cloudContent">
+                        <div className="cloud"></div>
+                        <div className="cloud"></div>
+                        <div className="cloud"></div>
+                    </div>
+                    <div className="brandContent">
+                        <img src='./images/flying-logo.png' alt="logo" />
+                        <h1>Hacklahoma</h1>
+                    </div>
                 </div>
             </div>
         );

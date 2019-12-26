@@ -2,35 +2,49 @@
     background-image: url('../../images/header-background.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    height: 90vh;
-    min-height: 400px;
+    height: 650px;
     color: white;
     position: relative;
+    overflow-x: hidden;
     .content {
-        display: inline-block;
-        vertical-align: middle;
-        margin-top: 80px;
         width: 100vw;
-        max-width: 560px;
-        height: 290px;
-        position: relative;
-        h1 {
-            position: absolute;
-            left: 0;
-            margin-left: 15px;
-            top: 70px;
-            font-size: 4.2em;
-            font-family: "Bebas";
-            font-weight: normal;
-        }
-        img {
-            transform: rotate(-6deg);
-            position: absolute;
-            right: 0;
+        max-width: 800px;
+        height: 0;
+        display: inline-block;
+        .brandContent {
+            position: relative;
+            bottom: 400px;
+            display: inline-block;
             vertical-align: middle;
-            width: 300px;
+            margin-top: 35px;
+            width: 100vw;
+            max-width: 560px;
+            position: relative;
+            h1 {
+                position: absolute;
+                left: 0;
+                margin-left: 20px;
+                top: 70px;
+                font-size: 4.2em;
+                font-family: "Bebas";
+                font-weight: normal;
+            }
+            img {
+                transform: rotate(-6deg);
+                position: absolute;
+                right: 0;
+                vertical-align: middle;
+                width: 300px;
+            }
         }
-
+        .cloudContent {
+            position: relative;
+            margin-top: 80px;
+            display: inline-block;
+            height: 350px;
+            max-width: 800px;
+            width: 100vw;
+        }
     }
 }
 
@@ -38,13 +52,21 @@
 // Mobile
 // 
 
-// @media only screen and (max-width : 768px) {
-//     .Header {
-//         .content {
-//             h1 {
-//             }
-//             img {
-//             }
-//         }
-//     }
-// }
+@media only screen and (max-width : 500px) {
+    .Header {
+        .content {
+            h1 {
+                position: relative !important;
+                margin: 0 !important;
+                top: -220px !important;
+                display: inline-block !important;
+            }
+            img {
+                position: relative !important;
+                margin: 0 !important;
+                display: inline-block !important;
+                opacity: .85;
+            }
+        }
+    }
+}
