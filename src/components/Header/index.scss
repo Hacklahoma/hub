@@ -16,7 +16,7 @@
             bottom: 400px;
             display: inline-block;
             vertical-align: middle;
-            margin-top: 35px;
+            margin-top: 70px;
             width: 100vw;
             max-width: 560px;
             position: relative;
@@ -41,9 +41,46 @@
             position: relative;
             margin-top: 80px;
             display: inline-block;
-            height: 350px;
+            height: 400px;
             max-width: 800px;
             width: 100vw;
+            .cloud {
+                height: 60px;
+                width: 25vw;
+                max-width: 172px;
+                min-width: 115px;
+                position: absolute;
+                background: url('../../images/cloud.png');
+                background-repeat: no-repeat;
+                background-size: contain;
+                offset-rotate: 0deg;
+                animation: move 3000ms infinite alternate ease-in-out;
+                // animation: cloud 3s linear infinite both;
+            }
+            .cloud:nth-child(1) {
+                transform: scaleX(-1);
+                // offset-path: path('M 20 20 Q 25 15 30 15 Q 35 15 35 20');
+                offset-path: path('M 10 10 Q 12 12 15 12 Q 17 12 17 10 ');
+                animation-delay: -2000ms;
+                left: 20%;
+                top: 20px;
+                float: left;
+            }
+            .cloud:nth-child(2) {
+                left: 90%;
+                right: 0;
+                top: 220px;
+                offset-path: path('M1,1 C1,5 10,0 10,5');
+                float: right;
+            }
+            .cloud:nth-child(3) {
+                left: 8%;
+                offset-path: path('M1,1 C1,5 10,0 10,5');
+                animation-direction: alternate-reverse;
+                animation-delay: -1000ms;
+                top: 340px;
+                float: left;
+            }
         }
     }
 }
@@ -70,3 +107,35 @@
         }
     }
 }
+
+//
+// Cloud Animations
+//
+@keyframes move {
+  0% {
+    offset-distance: 0%;
+  }
+  100% {
+    offset-distance: 100%;
+  }
+}
+// @keyframes cloud {
+//     0% {
+//         transform: translate(0);
+//     }
+//     20% {
+//         transform: translate(-4px, 4px);
+//     }
+//     40% {
+//         transform: translate(-4px, -4px);
+//     }
+//     60% {
+//         transform: translate(4px, 4px);
+//     }
+//     80% {
+//         transform: translate(4px, -4px);
+//     }
+//     100% {
+//         transform: translate(0);
+//     }
+// }
