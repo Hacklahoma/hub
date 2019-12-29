@@ -1,0 +1,54 @@
+.About {
+    position: relative;
+    bottom: 200px;
+    .imageContent {
+        width: 100vw;
+        .image {
+            position: relative;
+            display: inline-block;
+            overflow: hidden;
+            min-height: 200px;
+            height: 30vw;
+            max-height: 340px;
+            width: 80vw;
+            max-width: 850px;
+            border-radius: 8px;
+            img {
+                width: 100%;
+                border-radius: 8px;
+            }
+        }
+    }
+    .content {
+        text-align: left;
+        display: inline-block;
+        width: 80vw;
+        max-width: 450px;
+        margin-top: 20px;
+        h1 {
+            margin: 15px 0;
+            color: #2C3655;
+            font-weight: 900;
+        }
+    }
+}
+
+// 
+// Mobile
+// 
+@media only screen and (max-width : 800px) {
+    .About {
+        .image {
+            img {
+                margin-top: 30px;
+            }
+        }
+    }
+}
+@media only screen and (max-width : 500px) {
+    .About {
+        .image {
+            width: 93vw !important;
+        }
+    }
+}

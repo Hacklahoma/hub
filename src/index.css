@@ -1,17 +1,17 @@
 @font-face {
   font-family: "Avenir";
   src: url(./fonts/Avenir/Avenir-Black.ttf);
-  font-weight: bolder;
+  font-weight: 900;
 }
 @font-face {
   font-family: "Avenir";
   src: url(./fonts/Avenir/Avenir-Heavy.ttf);
-  font-weight: bold;
+  font-weight: 700;
 }
 @font-face {
   font-family: "Avenir";
   src: url(./fonts/Avenir/Avenir-Medium.ttf);
-  font-weight: normal;
+  font-weight: 400;
 }
 @font-face {
   font-family: "Bebas";
@@ -25,6 +25,7 @@
 }
 
 body {
+  background: #F2F4F7;
   font-family: 'Avenir', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
