@@ -13,10 +13,9 @@
             width: 80vw;
             max-width: 850px;
             border-radius: 8px;
-            img {
-                width: 100%;
-                border-radius: 8px;
-            }
+            user-select: none;
+            pointer-events: none;
+            z-index: 2;
         }
     }
     .content {
@@ -47,6 +46,7 @@
 }
 @media only screen and (max-width : 500px) {
     .About {
+        bottom: 170px;
         .image {
             width: 93vw !important;
         }

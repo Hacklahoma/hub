@@ -10,6 +10,12 @@ class About extends React.Component {
                     <Parallax
                         className="image"
                         bgImage={require('../../images/about.jpg')}
+                        bgImageStyle={{
+                            borderRadius: '8px',
+                            width: '100%',
+                            overflow: 'hidden',
+                            userSelect: 'none'
+                        }}
                         bgImageAlt="hacklahoma team"
                         strength={-50}
                     />
