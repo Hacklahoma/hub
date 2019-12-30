@@ -14,7 +14,7 @@ class Header extends React.Component {
                         <div className="cloud"></div>
                     </div>
                     <div className="brandContent">
-                        <img src='./images/flying-logo.png' alt="logo" />
+                        <img src={require('../../images/flyingLogo.png')} alt="logo" />
                         <h1>Hacklahoma</h1>
                     </div>
                 </div>

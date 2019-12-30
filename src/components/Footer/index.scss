@@ -1,0 +1,41 @@
+.Footer {
+    margin-top: 150px;
+    position: relative;
+    background: url('../../images/footerGrass1.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: auto;
+    color: white;
+    z-index: 3;
+    .trees {
+        position: absolute;
+        top: -70px;
+        left: -20px;
+        min-width: 200px;
+        width: 50vw;
+        max-width: 600px;
+    }
+    .flyingLogo {
+        position: absolute;
+        top: -70px;
+        right: -55px;
+        min-width: 210px;
+        width: 40vw;
+        max-width: 400px;
+        z-index: 1;
+        transform: scaleX(-1);
+        filter: grayscale(.4) brightness(1.15);
+        margin-left: calc(100% - 400px);
+    }
+}
+
+@media only screen and (max-width : 550px) {
+    .Footer {
+        .trees {
+            top: -40px;
+        }
+        .flyingLogo {
+            top: -40px;
+        }
+    }
+}
