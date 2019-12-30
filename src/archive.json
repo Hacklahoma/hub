@@ -1,0 +1,44 @@
+{
+    "2018": {
+        "color": "#333333",
+        "devpost": "https://hacklahoma18.devpost.com/",
+        "team": {
+            "Amy Le": {
+                "position": "Executive Director",
+                "instagram": null
+            },
+            "Sam Fletcher": {
+                "position": "Web Developer",
+                "instagram": "https://www.instagram.com/sfletchertx/"
+            }
+        }
+    },
+    "2019": {
+        "color": "#FFEED0",
+        "devpost": "https://hacklahoma.devpost.com/",
+        "team": {
+            "Amy Le": {
+                "position": "Executive Director",
+                "instagram": null
+            },
+            "Sam Fletcher": {
+                "position": "Web Developer",
+                "instagram": "https://www.instagram.com/sfletchertx/"
+            }
+        }
+    },
+    "2020": {
+        "color": "#B8DCEC",
+        "devpost": null,
+        "team": {
+            "Amy Le": {
+                "position": "Executive Director",
+                "instagram": null
+            },
+            "Sam Fletcher": {
+                "position": "Web Developer",
+                "instagram": "https://www.instagram.com/sfletchertx/"
+            }
+        }
+    }
+}
