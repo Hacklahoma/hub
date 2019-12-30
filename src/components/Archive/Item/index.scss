@@ -1,0 +1,29 @@
+.Item {
+    width: 100vw;
+    .container {
+        display: inline-block;
+        width: 80vw;
+        max-width: 600px;
+        margin: 30px 0;
+        h1 {
+            font-weight: 900;
+            text-align: left;
+            color: #2C3655;
+            margin-bottom: 12px;
+        }
+        .card {
+            cursor: pointer;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            background: white;
+            border-radius: 20px;
+            height: 220px;
+            img {
+                height: 70%;
+            }
+        }
+    }
+}

@@ -1,6 +1,6 @@
 .About {
     position: relative;
-    bottom: 200px;
+    margin-top: -200px;
     .imageContent {
         width: 100vw;
         .image {
@@ -46,7 +46,7 @@
 }
 @media only screen and (max-width : 500px) {
     .About {
-        bottom: 170px;
+        margin-top: -170px;
         .image {
             width: 93vw !important;
         }
