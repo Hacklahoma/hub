@@ -5,7 +5,7 @@ class Copyright extends React.Component {
     render() {
         return(
             <div className="Copyright">
-                Copyright © 2019 Hacklahoma ~ Made with ♥ in Norman
+                Copyright © 2019 Hacklahoma ~ Made with ♡ in Norman
             </div>
         );
     }
