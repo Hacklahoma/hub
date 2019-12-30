@@ -1,7 +1,7 @@
 .Contact {
-    margin-top: 210px;
+    margin-top: 200px;
     width: 90vw;
-    max-width: 700px;
+    max-width: 600px;
     display: inline-block;
     h1 {
         text-align: left;
@@ -10,7 +10,7 @@
     }
     p {
         text-align: left;
-        font-size: 1.3em;
+        font-size: 1.1em;
     }
     a {
         color: #4474f7;
@@ -25,5 +25,11 @@
             height: 26px;
             margin: 10px;
         }
+    }
+}
+
+@media only screen and (max-width : 700px) {
+    .Contact {
+        margin-top: 160px;
     }
 }
