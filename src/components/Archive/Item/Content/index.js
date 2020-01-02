@@ -31,6 +31,23 @@ class Content extends React.Component {
             );
     }
 
+    renderTeam() {
+        return(
+            <div className="team">
+                <div className="member"></div>
+                <div className="member"></div>
+                <div className="member"></div>
+                <div className="member"></div>
+                <div className="member"></div>
+                <div className="member"></div>
+                <div className="member"></div>
+                <div className="member"></div>
+                <div className="member"></div>
+                <div className="member"></div>
+            </div>
+        )
+    }
+
     render() {
         return(
             <div className="Content">
@@ -39,6 +56,12 @@ class Content extends React.Component {
                 </div>
                 <div className="container">
                     {this.renderButtons()}
+                </div>
+                <div className="container">
+                    <h1>Meet the Team</h1>
+                    <div className="container">
+                        {this.renderTeam()}
+                    </div>
                 </div>
             </div>
         );
