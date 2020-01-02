@@ -1,6 +1,8 @@
 .Item {
+    position: relative;
     width: 100vw;
     .container {
+        z-index: 2;
         display: inline-block;
         width: 80vw;
         max-width: 600px;
