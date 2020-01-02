@@ -44,6 +44,9 @@ class Content extends React.Component {
                 <div className="member"></div>
                 <div className="member"></div>
                 <div className="member"></div>
+                <div className="member"></div>
+                <div className="member"></div>
+                <div className="member"></div>
             </div>
         )
     }
@@ -60,7 +63,9 @@ class Content extends React.Component {
                 <div className="container">
                     <h1>Meet the Team</h1>
                     <div className="container">
-                        {this.renderTeam()}
+                        <div className="wrapper">
+                            {this.renderTeam()}
+                        </div>
                     </div>
                 </div>
             </div>
