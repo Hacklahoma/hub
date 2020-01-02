@@ -57,6 +57,10 @@ class Archive extends React.Component {
                     <Item 
                         year={key} 
                         color={archive[key].color}
+                        participants={archive[key].participants}
+                        projects={archive[key].projects}
+                        ended={archive[key].ended}
+                        live={archive[key].live}
                         devpost={archive[key].devpost}
                         team={archive[key].team}
                         // handles click

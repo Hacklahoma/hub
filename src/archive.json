@@ -1,6 +1,10 @@
 {
     "2018": {
         "color": "#333333",
+        "participants": "208",
+        "projects": "47",
+        "ended": true,
+        "live": false,
         "devpost": "https://hacklahoma18.devpost.com/",
         "team": {
             "Amy Le": {
@@ -15,6 +19,10 @@
     },
     "2019": {
         "color": "#FFEED0",
+        "participants": "217",
+        "projects": "52",
+        "ended": true,
+        "live": false,
         "devpost": "https://hacklahoma.devpost.com/",
         "team": {
             "Amy Le": {
@@ -29,6 +37,10 @@
     },
     "2020": {
         "color": "#B8DCEC",
+        "participants": "300",
+        "projects": "75",
+        "ended": false,
+        "live": true,
         "devpost": null,
         "team": {
             "Amy Le": {

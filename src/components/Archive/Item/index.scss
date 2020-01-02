@@ -8,13 +8,20 @@
         max-width: 600px;
         margin: 30px 0;
         h1 {
+            .live {
+                position: relative;
+                font-size: .5em;
+                bottom: 6px;
+            }
             font-weight: 900;
             text-align: left;
             color: #2C3655;
             margin-bottom: 12px;
         }
         .card {
+            z-index: 3;
             cursor: pointer;
+            box-shadow: 2px 3px 30px -10px rgba(0,0,0, .2);
             position: relative;
             display: flex;
             justify-content: center;
