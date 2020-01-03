@@ -13,6 +13,10 @@
                 position: relative;
                 font-size: .5em;
                 bottom: 6px;
+                animation: livePulse 1s linear infinite alternate;
+            }
+            .live:hover {
+                animation-play-state: paused;
             }
             font-weight: 900;
             text-align: left;
@@ -44,6 +48,17 @@
     }
     100% {
         margin-bottom: -100px;
+    }
+}
+
+@keyframes livePulse {
+    0% {
+        font-size: .5em;
+        bottom: 6px;
+    }
+    100% {
+        bottom: 5px;
+        font-size: .55em;
     }
 }
 
