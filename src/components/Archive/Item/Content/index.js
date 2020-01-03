@@ -34,21 +34,21 @@ class Content extends React.Component {
     renderTeam() {
         return(
             <div className="team">
-                <div className="member"></div>
-                <div className="member"></div>
-                <div className="member"></div>
-                <div className="member"></div>
-                <div className="member"></div>
-                <div className="member"></div>
-                <div className="member"></div>
-                <div className="member"></div>
-                <div className="member"></div>
-                <div className="member"></div>
-                <div className="member"></div>
-                <div className="member"></div>
-                <div className="member"></div>
+                {Object.keys(this.props.team).map((key) =>
+                    this.renderMember(key)
+                )}
             </div>
         )
+    }
+
+    renderMember(key) {
+        var image = <div className="image"></div>;
+        return (
+            <div key={key} className="member">{image}
+                              <br />{key}
+                              <br />{this.props.team[key].position}
+            </div>
+        );
     }
 
     render() {

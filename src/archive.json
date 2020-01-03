@@ -44,10 +44,42 @@
         "devpost": null,
         "team": {
             "Amy Le": {
+                "image": "1",
                 "position": "Executive Director",
                 "instagram": null
             },
             "Sam Fletcher": {
+                "image": "2",
+                "position": "Web Developer",
+                "instagram": "https://www.instagram.com/sfletchertx/"
+            },
+            "Amy Le2": {
+                "image": "3",
+                "position": "Executive Director",
+                "instagram": null
+            },
+            "Sam Fletcher2": {
+                "image": "4",
+                "position": "Web Developer",
+                "instagram": "https://www.instagram.com/sfletchertx/"
+            },
+            "Amy Le3": {
+                "image": "5",
+                "position": "Executive Director",
+                "instagram": null
+            },
+            "Sam Fletcher3": {
+                "image": "6",
+                "position": "Web Developer",
+                "instagram": "https://www.instagram.com/sfletchertx/"
+            },
+            "Amy Le4": {
+                "image": "7",
+                "position": "Executive Director",
+                "instagram": null
+            },
+            "Sam Fletcher4": {
+                "image": "8",
                 "position": "Web Developer",
                 "instagram": "https://www.instagram.com/sfletchertx/"
             }

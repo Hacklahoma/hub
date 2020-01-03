@@ -1,15 +1,12 @@
 .Content {
     position: relative;
-    height: auto;
-    max-height: 1200px;
-    margin-bottom: -100px;
+    border: 1px solid blue;
     z-index: 2;
     width: 100vw;
-    transition: max-height 1s, margin .5s;
-    bottom: 130px;
+    // transition: .5s;
     background: white;
     box-shadow: 0px 3px 30px -15px rgba(0,0,0, .2);
-    overflow: hidden;
+    overflow: visible;
     .container {
         width: 100%;
         max-width: 100%;
@@ -53,26 +50,29 @@
                 background: rgb(231, 231, 231);
                 border-radius: 8px;
                 display: inline-block;
+                .image {
+                    background: red;
+                    height: 30px;
+                    width: 100%;
+                }
             }
         }
     }
 }
 
-
-
-.Content.item-enter {
-    max-height: 0px;
-    margin-bottom: 0px;
-}
-.Content.item-enter-active {
-    max-height: 1200px;
-    margin-bottom: -100px;
-}
-.Content.item-exit {
-    max-height: 1200px;
-    margin-bottom: -100px;
-}
-.Content.item-exit-active {
-    max-height: 0;
-    margin-bottom: 0px;
-}
+// .Content.item-enter {
+//     max-height: 0px;
+//     margin-bottom: 0px;
+// }
+// .Content.item-enter-active {
+//     max-height: 1200px;
+//     margin-bottom: -100px;
+// }
+// .Content.item-exit {
+//     max-height: 1200px;
+//     margin-bottom: -100px;
+// }
+// .Content.item-exit-active {
+//     max-height: 0;
+//     margin-bottom: 0px;
+// }

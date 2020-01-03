@@ -8,8 +8,7 @@ class Archive extends React.Component {
         super(props);
         this.state = {
             // controls all active items
-            itemsExpanded: {},
-            inMotion: false
+            itemsExpanded: {}
         };
         this.handleClick = this.handleClick.bind(this);
     }
@@ -18,22 +17,21 @@ class Archive extends React.Component {
     handleClick(keyParam) {        
         // copying state
         var temp = this.state.itemsExpanded;
-        // setting to false if item is already open
+        // setting to 0 if item is already open
         if (temp[keyParam]) {
-            temp[keyParam] = false;
+            temp[keyParam] = 0;
         }
-        // setting everything to false before we open item
+        // setting everything to 0 before we open item
         else {
             Object.keys(archive).map((key) => 
-                temp[key] = false
+                temp[key] = 0
             );
-            temp[keyParam] = true;
+            temp[keyParam] = "auto";
         }
 
         // setting state
         this.setState({
-            itemsExpanded: temp,
-            inMotion: false
+            itemsExpanded: temp
         });
     }
 
@@ -41,7 +39,7 @@ class Archive extends React.Component {
         var temp = {};
         // populating state with items
         Object.keys(archive).map((key) =>
-            temp[key] = false
+            temp[key] = 0
         );
 
         this.setState({
