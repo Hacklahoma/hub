@@ -1,5 +1,6 @@
 .Navbar {
     li {
+        cursor: pointer;
         display: inline-block;
         margin: 18px;
         font-weight: bold;
@@ -11,5 +12,15 @@
     }
     li:nth-child(4) {
         margin-right: 0;
+    }
+    .live {
+        position: relative;
+        top: 2px;
+        font-weight: 900; 
+        font-size: 1.2em; 
+        a {
+            text-decoration: none;
+            color: white;
+        }
     }
 }
