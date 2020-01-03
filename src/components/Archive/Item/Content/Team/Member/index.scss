@@ -1,0 +1,19 @@
+.Member {
+    // background: #eee;
+    .image {
+        width: 100px;
+        clip-path: circle(50% at 50% 50%);
+    }
+    .femalepng {
+        transform: scaleX(-1);
+    }
+    .name {
+        font-size: .85em;
+        white-space: nowrap;
+        font-weight: 600;
+    }
+    .position {
+        font-family: Menlo;
+        font-size: .58em;
+    }
+}

@@ -8,10 +8,12 @@
         "devpost": "https://hacklahoma18.devpost.com/",
         "team": {
             "Amy Le": {
+                "image": "female.png",
                 "position": "Executive Director",
                 "instagram": null
             },
             "Sam Fletcher": {
+                "image": "male.png",
                 "position": "Web Developer",
                 "instagram": "https://www.instagram.com/sfletchertx/"
             }
@@ -26,10 +28,12 @@
         "devpost": "https://hacklahoma.devpost.com/",
         "team": {
             "Amy Le": {
+                "image": "female.png",
                 "position": "Executive Director",
                 "instagram": null
             },
             "Sam Fletcher": {
+                "image": "male.png",
                 "position": "Web Developer",
                 "instagram": "https://www.instagram.com/sfletchertx/"
             }
@@ -44,43 +48,43 @@
         "devpost": null,
         "team": {
             "Amy Le": {
-                "image": "1",
+                "image": "amy-le.jpg",
                 "position": "Executive Director",
                 "instagram": null
             },
-            "Sam Fletcher": {
-                "image": "2",
-                "position": "Web Developer",
+            "Cole Chronowski": {
+                "image": "cole-chronowski.jpg",
+                "position": "Executive Director",
                 "instagram": "https://www.instagram.com/sfletchertx/"
             },
-            "Amy Le2": {
-                "image": "3",
-                "position": "Executive Director",
+            "Miguel Sanchez Marin": {
+                "image": "male.png",
+                "position": "Sponsoring & Finance Director",
                 "instagram": null
             },
-            "Sam Fletcher2": {
-                "image": "4",
-                "position": "Web Developer",
+            "Becka Nguyen": {
+                "image": "becka-nguyen.jpg",
+                "position": "Sponsor Liaison",
                 "instagram": "https://www.instagram.com/sfletchertx/"
             },
-            "Amy Le3": {
-                "image": "5",
-                "position": "Executive Director",
+            "Christina Nguyen": {
+                "image": "female.png",
+                "position": "Sponsor Liaison",
                 "instagram": null
             },
-            "Sam Fletcher3": {
-                "image": "6",
-                "position": "Web Developer",
+            "Erica Luong": {
+                "image": "female.png",
+                "position": "Creative Director",
                 "instagram": "https://www.instagram.com/sfletchertx/"
             },
-            "Amy Le4": {
-                "image": "7",
-                "position": "Executive Director",
+            "John Alberse": {
+                "image": "john-alberse.jpg",
+                "position": "Graphic Designer",
                 "instagram": null
             },
-            "Sam Fletcher4": {
-                "image": "8",
-                "position": "Web Developer",
+            "Lisa Egede": {
+                "image": "lisa-egede.jpg",
+                "position": "Marketing Strategist",
                 "instagram": "https://www.instagram.com/sfletchertx/"
             }
         }

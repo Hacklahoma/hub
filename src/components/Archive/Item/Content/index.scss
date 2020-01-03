@@ -1,9 +1,7 @@
 .Content {
     position: relative;
-    border: 1px solid blue;
     z-index: 2;
     width: 100vw;
-    // transition: .5s;
     background: white;
     box-shadow: 0px 3px 30px -15px rgba(0,0,0, .2);
     overflow: visible;
@@ -27,52 +25,5 @@
                 margin: 0 5px;
             }
         }
-        h1 {
-            margin-top: 60px;
-            color: black;
-            font-size: 1.5em;
-            display: inline-block;
-        }
-        .team {
-            // border: 1px solid black;
-            display: grid;
-            margin: 0 20px;
-            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-            grid-gap: 1rem;
-            justify-items: center;
-            width: auto;
-            margin: auto;
-            max-width: 570px;
-            margin-bottom: 60px;
-            .member {
-                width: 100px;
-                height: 100px;
-                background: rgb(231, 231, 231);
-                border-radius: 8px;
-                display: inline-block;
-                .image {
-                    background: red;
-                    height: 30px;
-                    width: 100%;
-                }
-            }
-        }
     }
 }
-
-// .Content.item-enter {
-//     max-height: 0px;
-//     margin-bottom: 0px;
-// }
-// .Content.item-enter-active {
-//     max-height: 1200px;
-//     margin-bottom: -100px;
-// }
-// .Content.item-exit {
-//     max-height: 1200px;
-//     margin-bottom: -100px;
-// }
-// .Content.item-exit-active {
-//     max-height: 0;
-//     margin-bottom: 0px;
-// }

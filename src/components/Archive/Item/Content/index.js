@@ -1,6 +1,7 @@
 import React from 'react'
 import './index.scss'
 import Button from '../../../Button'
+import Team from './Team'
 
 class Content extends React.Component {
 
@@ -61,12 +62,7 @@ class Content extends React.Component {
                     {this.renderButtons()}
                 </div>
                 <div className="container">
-                    <h1>Meet the Team</h1>
-                    <div className="container">
-                        <div className="wrapper">
-                            {this.renderTeam()}
-                        </div>
-                    </div>
+                    <Team team={this.props.team} />
                 </div>
             </div>
         );

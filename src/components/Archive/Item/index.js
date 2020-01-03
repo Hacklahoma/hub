@@ -41,7 +41,7 @@ class Item extends React.Component {
                     }}
                 >
                     <CSSTransition
-                        in={this.props.expanded === 0 ? false : true}
+                        in={(this.props.expanded === 0 ) ? false : true}
                         timeout={500}
                         classNames="item"
                         unmountOnExit
