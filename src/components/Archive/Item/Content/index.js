@@ -54,7 +54,7 @@ class Content extends React.Component {
 
     render() {
         return(
-            <div className="Content">
+            <div className="Content" id={this.props.year + "Content"}>
                 <div className="container">
                     {this.renderInfo()}
                 </div>

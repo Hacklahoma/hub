@@ -9,14 +9,14 @@ class Navbar extends React.Component {
     showLive = true; // show live in navbar
     liveLink = "https://2020.hacklahoma.org"; // live website
 
-    scrollToTargetAdjusted(el) {
+    smoothScrollTo(el) {
         var element = document.getElementsByClassName(el)[0];
         var headerOffset = 0;
         if(el === "About") 
             headerOffset = 50;
         var elementPosition = element.getBoundingClientRect().top;
         var offsetPosition = elementPosition - headerOffset;
-
+        
         window.scrollTo({
             top: offsetPosition,
             behavior: "smooth"
@@ -27,9 +27,9 @@ class Navbar extends React.Component {
         return(
             <div className="Navbar">
                 <ul>
-                    <li onClick={() => {this.scrollToTargetAdjusted('About')}}>About</li>
-                    <li onClick={() => {this.scrollToTargetAdjusted('Archive')}}>Archive</li>
-                    <li onClick={() => {this.scrollToTargetAdjusted('Footer')}}>Contact</li>
+                    <li onClick={() => { this.smoothScrollTo('About') }}>About</li>
+                    <li onClick={() => { this.smoothScrollTo('Archive') }}>Archive</li>
+                    <li onClick={() => { this.smoothScrollTo('Footer') }}>Contact</li>
                     {this.showLive ? <li className="live"><a target="_blank" rel="noopener noreferrer" href={this.liveLink}>LIVE</a></li> : null}
                 </ul>
             </div>

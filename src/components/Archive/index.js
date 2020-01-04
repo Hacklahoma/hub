@@ -13,19 +13,59 @@ class Archive extends React.Component {
         this.handleClick = this.handleClick.bind(this);
     }
 
+    // helper function to check if element is in the view port
+    elementInViewport(el) {
+        var top = el.offsetTop + 130;
+        var left = el.offsetLeft;
+        var width = el.offsetWidth;
+        var height = el.offsetHeight;
+
+        while (el.offsetParent) {
+            el = el.offsetParent;
+            top += el.offsetTop;
+            left += el.offsetLeft;
+        }
+
+        return (
+            top < (window.pageYOffset + window.innerHeight) &&
+            left < (window.pageXOffset + window.innerWidth) &&
+            (top + height) > window.pageYOffset &&
+            (left + width) > window.pageXOffset
+        );
+    }
+
     // closes all items when new one opens
     handleClick(keyParam) {        
         // copying state
         var temp = this.state.itemsExpanded;
+        // checking if any other archives are opened
+        var othersOpened = false;
+        Object.keys(archive).map((key) =>
+            temp[key] !== 0 ? othersOpened = true : null
+        );
         // setting to 0 if item is already open
         if (temp[keyParam]) {
             temp[keyParam] = 0;
         }
         // setting everything to 0 before we open item
-        else {
+        else if (othersOpened) {
+            var closed;
+            // going through array and getting opened archive
             Object.keys(archive).map((key) => 
-                temp[key] = 0
+                temp[key] !== 0 ? (temp[key] = 0, closed = key) : null 
             );
+            // opening desired archive
+            temp[keyParam] = "auto";
+            // Fixing scrolling proplem while other archive is closing
+            if (parseInt(keyParam) < parseInt(closed)) {
+                // checking if element content being closed is in the viewport
+                if (this.elementInViewport(document.getElementById(closed + "Content"))) {
+                    var node = document.getElementById(keyParam);
+                    setTimeout(() => node.scrollIntoView({ behavior: "smooth"}), 500);
+                }
+            }
+        }
+        else {
             temp[keyParam] = "auto";
         }
 
