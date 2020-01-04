@@ -15,6 +15,9 @@ class Team extends React.Component {
                                     image={this.props.team[key].image}
                                     position={this.props.team[key].position} 
                                     instagram={this.props.team[key].instagram} 
+                                    twitter={this.props.team[key].twitter} 
+                                    linkedin={this.props.team[key].linkedin} 
+                                    github={this.props.team[key].github} 
                             />
                         )}
                     </div>
