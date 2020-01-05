@@ -1,5 +1,6 @@
 import React from 'react'
 import './index.scss'
+import Button from '../../Button'
 
 class Navbar extends React.Component {
 
@@ -30,7 +31,8 @@ class Navbar extends React.Component {
                     <li onClick={() => { this.smoothScrollTo('About') }}>About</li>
                     <li onClick={() => { this.smoothScrollTo('Archive') }}>Archive</li>
                     <li onClick={() => { this.smoothScrollTo('Footer') }}>Contact</li>
-                    {this.showLive ? <li className="live"><a target="_blank" rel="noopener noreferrer" href={this.liveLink}>LIVE</a></li> : null}
+                    {/* {this.showLive ? <li className="live"><a target="_blank" rel="noopener noreferrer" href={this.liveLink}>LIVE</a></li> : null} */}
+                    {this.showLive ? <Button href={"https://" + this.props.year + ".hacklahoma.org"} color="live">LIVE</Button> : null}
                 </ul>
             </div>
         );

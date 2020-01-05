@@ -5,9 +5,12 @@
     border-width: 3px;
     border-style: solid;
     border-radius: 5px;
-    color: white;
-    text-decoration: none;
     transition: .5s;
+    display: inline-block;
+    a {
+        color: white;
+        text-decoration: none;
+    }
 }
 
 .Button.green {
@@ -30,6 +33,7 @@
     padding: 2px 16px;
     background: rgb(192, 90, 90);
     border: 3px solid rgb(177, 84, 84);
+    transform: scale(2);
 }
 .Button.live:hover {
     background: rgb(177, 84, 84);

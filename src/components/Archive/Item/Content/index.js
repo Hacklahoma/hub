@@ -19,16 +19,16 @@ class Content extends React.Component {
     renderButtons() {
         if (this.props.devpost !== null)
             return (
-                <p className="buttons">
+                <div className="buttons">
                     <Button href={"https://" + this.props.year + ".hacklahoma.org"} color="green">Website</Button>
                     <Button href={this.props.devpost} color="blue">Devpost</Button>
-                </p>
+                </div>
             );
         else
             return (
-                <p className="buttons">
+                <div className="buttons">
                     <Button href={"https://" + this.props.year + ".hacklahoma.org"} color="green">Website</Button>
-                </p>
+                </div>
             );
     }
 

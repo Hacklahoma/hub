@@ -15,12 +15,17 @@
     }
     .live {
         position: relative;
-        top: 2px;
+        // top: 2px;
         font-weight: 900; 
-        font-size: 1.2em; 
+        font-size: .8em;
+        margin-left: 14px;
+        animation: pulse 1.5s linear alternate infinite;
         a {
             text-decoration: none;
             color: white;
         }
+    }
+    .live:hover {
+        animation-play-state: paused;
     }
 }
