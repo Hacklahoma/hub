@@ -42,10 +42,10 @@
             "Amy Le": {
                 "image": "amy-le.jpg",
                 "position": "Advertising & Media Director",
-                "instagram": "https://www.instagram.com/lamey0/",
+                "instagram": null,
                 "twitter": null,
-                "linkedin": "https://www.linkedin.com/in/amy-le-0/",
-                "github": "https://github.com/lamey"
+                "linkedin": null,
+                "github": null
             },
             "Cody Degner": {
                 "image": "cody-degner.jpg",
@@ -236,10 +236,10 @@
             "Amy Le": {
                 "image": "amy-le.jpg",
                 "position": "Advertising & Media Director",
-                "instagram": "https://www.instagram.com/lamey0/",
+                "instagram": null,
                 "twitter": null,
-                "linkedin": "https://www.linkedin.com/in/amy-le-0/",
-                "github": "https://github.com/lamey"
+                "linkedin": null,
+                "github": null
             },
             "Valerie Pham": {
                 "image": "valerie-pham.jpg",
