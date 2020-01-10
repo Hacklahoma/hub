@@ -13,11 +13,14 @@
         font-weight: 600;
     }
     .position {
+        margin-top: 1px;
         font-family: Menlo;
         font-size: .58em;
+        line-height: 10px;
+        height: 23px;
+        // white-space: nowrap;
     }
     .social {
-        margin-top: 10px;
         img {
             height: 16px;
             margin: 0 3px;

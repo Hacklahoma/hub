@@ -8,7 +8,7 @@
         "devpost": "https://hacklahoma18.devpost.com/",
         "team": {
             "John Tran": {
-                "image": "male.png",
+                "image": "john-tran.jpg",
                 "position": "Executive Director",
                 "instagram": null,
                 "twitter": null,
@@ -16,7 +16,7 @@
                 "github": null
             },
             "Shreya Patel": {
-                "image": "female.png",
+                "image": "shreya-patel.jpg",
                 "position": "Executive Director",
                 "instagram": null,
                 "twitter": null,
@@ -24,7 +24,7 @@
                 "github": null
             },
             "Patrick Leung": {
-                "image": "male.png",
+                "image": "patrick-leung.jpg",
                 "position": "Sponsoring & Finance Director",
                 "instagram": null,
                 "twitter": null,
@@ -32,7 +32,7 @@
                 "github": null
             },
             "Jennifer Droke": {
-                "image": "female.png",
+                "image": "jennifer-droke.jpg",
                 "position": "Logisitics & Programming Director",
                 "instagram": null,
                 "twitter": null,
@@ -42,13 +42,13 @@
             "Amy Le": {
                 "image": "amy-le.jpg",
                 "position": "Advertising & Media Director",
-                "instagram": null,
+                "instagram": "https://www.instagram.com/lamey0/",
                 "twitter": null,
-                "linkedin": null,
-                "github": null
+                "linkedin": "https://www.linkedin.com/in/amy-le-0/",
+                "github": "https://github.com/lamey"
             },
             "Cody Degner": {
-                "image": "male.png",
+                "image": "cody-degner.jpg",
                 "position": "Volunteering Director",
                 "instagram": null,
                 "twitter": null,
@@ -56,7 +56,7 @@
                 "github": null
             },
             "Valerie Pham": {
-                "image": "female.png",
+                "image": "valerie-pham.jpg",
                 "position": "Sponsoring & Finance",
                 "instagram": null,
                 "twitter": null,
@@ -104,7 +104,7 @@
                 "github": null
             },
             "Richard Yang": {
-                "image": "male.png",
+                "image": "richard-yang.jpg",
                 "position": "Logistics & Programming",
                 "instagram": null,
                 "twitter": null,
@@ -144,7 +144,7 @@
                 "github": null
             },
             "John LaRocque": {
-                "image": "male.png",
+                "image": "john-larocque.jpg",
                 "position": "Advertising & Media",
                 "instagram": null,
                 "twitter": null,
@@ -160,7 +160,7 @@
                 "github": null
             },
             "Nicole Hutton": {
-                "image": "female.png",
+                "image": "nicole-hutton.jpg",
                 "position": "Advertising & Media",
                 "instagram": null,
                 "twitter": null,
@@ -184,7 +184,7 @@
                 "github": null
             },
             "Jason Nguyen": {
-                "image": "male.png",
+                "image": "jason-nguyen.jpg",
                 "position": "Volunteering",
                 "instagram": null,
                 "twitter": null,
@@ -218,7 +218,7 @@
         "devpost": "https://hacklahoma.devpost.com/",
         "team": {
             "John Tran": {
-                "image": "male.png",
+                "image": "john-tran.jpg",
                 "position": "Executive Director",
                 "instagram": null,
                 "twitter": null,
@@ -226,7 +226,7 @@
                 "github": null
             },
             "Jennifer Droke": {
-                "image": "female.png",
+                "image": "jennifer-droke.jpg",
                 "position": "Executive Director",
                 "instagram": null,
                 "twitter": null,
@@ -236,13 +236,13 @@
             "Amy Le": {
                 "image": "amy-le.jpg",
                 "position": "Advertising & Media Director",
-                "instagram": null,
+                "instagram": "https://www.instagram.com/lamey0/",
                 "twitter": null,
-                "linkedin": null,
-                "github": null
+                "linkedin": "https://www.linkedin.com/in/amy-le-0/",
+                "github": "https://github.com/lamey"
             },
             "Valerie Pham": {
-                "image": "female.png",
+                "image": "valerie-pham.jpg",
                 "position": "Sponsoring & Finance Director",
                 "instagram": null,
                 "twitter": null,
@@ -250,7 +250,7 @@
                 "github": null
             },
             "Cody Degner": {
-                "image": "male.png",
+                "image": "cody-degner.jpg",
                 "position": "Logisitcs & Programming Director",
                 "instagram": null,
                 "twitter": null,
@@ -266,7 +266,7 @@
                 "github": null
             },
             "John LaRocque": {
-                "image": "male.png",
+                "image": "john-larocque.jpg",
                 "position": "Web Developer",
                 "instagram": null,
                 "twitter": null,
@@ -298,7 +298,7 @@
                 "github": null
             },
             "Nicole Hutton": {
-                "image": "female.png",
+                "image": "nicole-hutton.jpg",
                 "position": "Marketing & Social Media",
                 "instagram": null,
                 "twitter": null,
@@ -422,10 +422,10 @@
             "Amy Le": {
                 "image": "amy-le.jpg",
                 "position": "Executive Director",
-                "instagram": "https://www.instagram.com",
-                "twitter": "https://www.twitter.com",
-                "linkedin": "https://www.linkedin.com",
-                "github": "https://www.github.com"
+                "instagram": "https://www.instagram.com/lamey0/",
+                "twitter": null,
+                "linkedin": "https://www.linkedin.com/in/amy-le-0/",
+                "github": "https://github.com/lamey"
             },
             "Cole Chronowski": {
                 "image": "cole-chronowski.jpg",
@@ -486,10 +486,10 @@
             "Lisa Egede": {
                 "image": "lisa-egede.jpg",
                 "position": "Marketing Strategist",
-                "instagram": null,
-                "twitter": null,
-                "linkedin": null,
-                "github": null
+                "instagram": "https://www.instagram.com/lisaegede/",
+                "twitter": "https://twitter.com/lisaegede",
+                "linkedin": "https://www.linkedin.com/in/lisaegede/",
+                "github": "https://github.com/lisaegede"
             },
             "Tomma Bambara": {
                 "image": "male.png",
@@ -510,10 +510,10 @@
             "Raegan Shirk": {
                 "image": "reagan-shirk.jpg",
                 "position": "Technology Director",
-                "instagram": null,
-                "twitter": null,
-                "linkedin": null,
-                "github": null
+                "instagram": "https://www.instagram.com/all_about_that_rage/",
+                "twitter": "https://twitter.com/allboutthatrage/",
+                "linkedin": "https://www.linkedin.com/in/reaganshirk/",
+                "github": "https://github.com/reaganshirk"
             },
             "Sam Fletcher": {
                 "image": "sam-fletcher.jpg",
@@ -534,10 +534,10 @@
             "Shelby Huffman": {
                 "image": "shelby-huffman.jpg",
                 "position": "Operations Officer",
-                "instagram": null,
+                "instagram": "https://www.instagram.com/mr._.huffy/",
                 "twitter": null,
-                "linkedin": null,
-                "github": null
+                "linkedin": "https://www.linkedin.com/in/shelbyhuffy/",
+                "github": "https://github.com/Shleby"
             },
             "Anne Luthfiyah": {
                 "image": "female.png",
