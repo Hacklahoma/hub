@@ -33,6 +33,7 @@ class Item extends React.Component {
                 <AnimateHeight
                     duration={500}
                     height={this.props.expanded === undefined ? 0 : this.props.expanded}
+                    easing="ease"
                     style={{
                         position: "relative",
                         marginBottom: this.props.expanded === "auto" ? "-100px" : "0",

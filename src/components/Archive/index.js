@@ -2,6 +2,7 @@ import React from 'react'
 import './index.scss'
 import Item from './Item'
 import archive from '../../archive';
+import animateScrollTo from 'animated-scroll-to';
 
 class Archive extends React.Component {
     constructor(props) {
@@ -66,11 +67,12 @@ class Archive extends React.Component {
 
                     // NEW METHOD
 
-                    // scrollToPosition = [top position of item pressed] - [height of previous item content] + [offset]
+                    // scrollToPosition = [top position of item pressed] - [height of previous item content] + [offset]                     
                     var scrollToPosition = document.getElementById(keyParam).offsetTop - document.getElementById(closed + "Content").offsetHeight + 100
-                    window.scrollTo({ 
-                        top: scrollToPosition, 
-                        behavior: "smooth"
+                    animateScrollTo(scrollToPosition, {
+                        maxDuration: 500,
+                        minDuration: 500,
+                        // easing: t => t
                     })
                 }
             }
