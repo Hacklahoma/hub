@@ -60,8 +60,18 @@ class Archive extends React.Component {
             if (parseInt(keyParam) < parseInt(closed)) {
                 // checking if element content being closed is in the viewport
                 if (this.elementInViewport(document.getElementById(closed + "Content"))) {
-                    var node = document.getElementById(keyParam);
-                    setTimeout(() => node.scrollIntoView({ behavior: "smooth"}), 500);
+                    // OLD METHOD
+                    // var node = document.getElementById(keyParam);
+                    // setTimeout(() => node.scrollIntoView({ behavior: "smooth"}), 500);
+
+                    // NEW METHOD
+
+                    // scrollToPosition = [top position of item pressed] - [height of previous item content] + [offset]
+                    var scrollToPosition = document.getElementById(keyParam).offsetTop - document.getElementById(closed + "Content").offsetHeight + 100
+                    window.scrollTo({ 
+                        top: scrollToPosition, 
+                        behavior: "smooth"
+                    })
                 }
             }
         }
