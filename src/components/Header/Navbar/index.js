@@ -1,14 +1,18 @@
 import React from 'react'
 import './index.scss'
 import Button from '../../Button'
+import archive from '../../../archive';
 
 class Navbar extends React.Component {
 
-    // **************
-    // CONFIG
-    // **************
-    showLive = true; // show live in navbar
-    liveLink = "https://2020.hacklahoma.org"; // live website
+    liveYear = "www";
+    showLive() {
+        Object.keys(archive).map((key) =>
+            archive[key].live ? this.liveYear = key : null
+        );
+
+        return this.liveYear !== "www";
+    }
 
     smoothScrollTo(el) {
         var element = document.getElementsByClassName(el)[0];
@@ -32,7 +36,8 @@ class Navbar extends React.Component {
                     <li onClick={() => { this.smoothScrollTo('Archive') }}>Archive</li>
                     <li onClick={() => { this.smoothScrollTo('Footer') }}>Contact</li>
                     {/* {this.showLive ? <li className="live"><a target="_blank" rel="noopener noreferrer" href={this.liveLink}>LIVE</a></li> : null} */}
-                    {this.showLive ? <Button href={"https://" + this.props.year + ".hacklahoma.org"} color="live">LIVE</Button> : null}
+                    {this.showLive() ? <Button href={"https://" + this.liveYear + ".hacklahoma.org"} color="live">LIVE</Button> : null}
+                    {/* <Button href={"https://" + this.liveYear + ".hacklahoma.org"} color="live">LIVE</Button> */}
                 </ul>
             </div>
         );
