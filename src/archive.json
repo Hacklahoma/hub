@@ -417,7 +417,7 @@
         "projects": "75",
         "ended": false,
         "live": true,
-        "devpost": null,
+        "devpost": "https://hacklahoma20.devpost.com/",
         "team": {
             "Amy Le": {
                 "image": "amy-le.jpg",
