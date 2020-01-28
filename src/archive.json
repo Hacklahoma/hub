@@ -260,10 +260,10 @@
             "Cole Chronowski": {
                 "image": "cole-chronowski.jpg",
                 "position": "Logisitcs & Programming Director",
-                "instagram": "https://www.instagram.com/coley.did.it/",
+                "instagram": null,
                 "twitter": null,
-                "linkedin": "https://www.linkedin.com/in/cole-chronowski/",
-                "github": "https://github.com/ColeChronowski"
+                "linkedin": null,
+                "github": null
             },
             "John LaRocque": {
                 "image": "john-larocque.jpg",
@@ -429,11 +429,11 @@
             },
             "Cole Chronowski": {
                 "image": "cole-chronowski.jpg",
-                "position": "Executive Director",
-                "instagram": null,
+                "position": "Logisitcs & Programming Director",
+                "instagram": "https://www.instagram.com/coley.did.it/",
                 "twitter": null,
-                "linkedin": null,
-                "github": null
+                "linkedin": "https://www.linkedin.com/in/cole-chronowski/",
+                "github": "https://github.com/ColeChronowski"
             },
             "Miguel Sanchez Marin": {
                 "image": "male.png",
