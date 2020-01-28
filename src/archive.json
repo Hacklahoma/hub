@@ -260,10 +260,10 @@
             "Cole Chronowski": {
                 "image": "cole-chronowski.jpg",
                 "position": "Logisitcs & Programming Director",
-                "instagram": null,
+                "instagram": "https://www.instagram.com/coley.did.it/",
                 "twitter": null,
-                "linkedin": null,
-                "github": null
+                "linkedin": "https://www.linkedin.com/in/cole-chronowski/",
+                "github": "https://github.com/ColeChronowski"
             },
             "John LaRocque": {
                 "image": "john-larocque.jpg",
@@ -462,26 +462,26 @@
             "Shihui Liu": {
                 "image": "shihui-liu.jpg",
                 "position": "Sponsor Liaison",
-                "instagram": null,
+                "instagram": "https://www.instagram.com/chipshihui/",
                 "twitter": null,
-                "linkedin": null,
+                "linkedin": "https://www.linkedin.com/in/shihuiliu96/",
                 "github": null
             },
             "Erica Luong": {
                 "image": "female.png",
                 "position": "Creative Director",
-                "instagram": null,
+                "instagram": "https://www.instagram.com/aishite_rika/",
                 "twitter": null,
                 "linkedin": null,
-                "github": null
+                "github": "https://github.com/ericaluong"
             },
             "John Alberse": {
                 "image": "john-alberse.jpg",
                 "position": "Graphic Designer",
-                "instagram": null,
-                "twitter": null,
-                "linkedin": null,
-                "github": null
+                "instagram": "https://www.instagram.com/theartofjohnalberse/",
+                "twitter": "https://twitter.com/JohnAlberse",
+                "linkedin": "https://www.linkedin.com/in/john-alberse-518453172/",
+                "github": "https://github.com/jalberse"
             },
             "Lisa Egede": {
                 "image": "lisa-egede.jpg",
@@ -540,11 +540,11 @@
                 "github": "https://github.com/Shleby"
             },
             "Anne Luthfiyah": {
-                "image": "female.png",
+                "image": "anne-luthfiyah.jpg",
                 "position": "Hacker Experience Officer",
-                "instagram": null,
-                "twitter": null,
-                "linkedin": null,
+                "instagram": "https://www.instagram.com/anneluthfiyah",
+                "twitter": "https://www.twitter.com/anne_luthfiyah",
+                "linkedin": "https://www.linkedin.com/anne-luthfiyah-259521185",
                 "github": null
             },
             "Preetha Thanunathan": {
