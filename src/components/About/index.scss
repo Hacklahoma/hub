@@ -3,6 +3,7 @@
     margin-top: -200px;
     .imageContent {
         width: 100vw;
+        animation: slide-up 1s;
         .image {
             position: relative;
             display: inline-block;
@@ -31,6 +32,24 @@
         }
     }
 }
+
+//
+// Animations
+// 
+@keyframes slide-up {
+    0% {
+        opacity: 0;
+        margin-top: 100px;
+    }
+    20% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        margin-top: 0;
+    }
+}
+
 
 // 
 // Mobile

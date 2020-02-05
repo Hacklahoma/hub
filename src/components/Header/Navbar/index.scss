@@ -1,4 +1,6 @@
 .Navbar {
+    position: relative;
+    animation: slide-down 1s;
     li {
         cursor: pointer;
         display: inline-block;
@@ -27,5 +29,16 @@
     }
     .live:hover {
         animation-play-state: paused;
+    }
+}
+
+@keyframes slide-down {
+    0% {
+        top: -50px;
+        opacity: 0;
+    }
+    100% {
+        top: 0px;
+        opacity: 1;
     }
 }

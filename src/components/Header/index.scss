@@ -21,6 +21,7 @@
             max-width: 560px;
             position: relative;
             h1 {
+                animation: fade 1s;
                 position: absolute;
                 left: 0;
                 margin-left: 20px;
@@ -46,7 +47,7 @@
             max-width: 800px;
             width: 100vw;
             .cloudFade {
-                animation: cloudFade 6s ease-out;
+                animation: cloudFade 6s ease-in;
                 .cloud {
                     opacity: .85;
                     height: 60px;
@@ -119,6 +120,17 @@
 //
 // Cloud Animations
 //
+
+@keyframes fade {
+    0% {
+        left: -20px;
+        opacity: 0;
+    }
+    100% {
+        left: 0;
+        opacity: 1;
+    }
+}
 
 @keyframes cloud1 {
     0% {
