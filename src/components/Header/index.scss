@@ -1,11 +1,18 @@
 .Header {
-    background: url('../../images/headerBackground.png');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+    // background: url('../../images/headerBackground.svg');
+    // background-size: 100vw 100%;
+    // background-repeat: no-repeat;
     height: 800px;
     color: white;
     position: relative;
     overflow: hidden;
+    .cover {
+        height: 100%;
+        width: 100vw;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
     .content {
         width: 100vw;
         max-width: 800px;
@@ -27,7 +34,7 @@
                 margin-left: 20px;
                 top: 70px;
                 font-size: 4.2em;
-                font-family: "Bebas";
+                font-family: 'Bebas', 'Avenir', 'Helvetica Neue', sans-serif;
                 font-weight: normal;
             }
             img {

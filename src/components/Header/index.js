@@ -6,6 +6,7 @@ class Header extends React.Component {
     render() {
         return(
             <div className="Header">
+                <img className="cover" src={require('../../images/headerBackground.svg')} alt="" />
                 <Navbar />
                 <div className="content">
                     <div className="cloudContent">
