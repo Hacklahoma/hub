@@ -413,10 +413,10 @@
     },
     "2020": {
         "color": "#B8DCEC",
-        "participants": "300",
-        "projects": "75",
-        "ended": false,
-        "live": true,
+        "participants": "283",
+        "projects": "59",
+        "ended": true,
+        "live": false,
         "devpost": "https://hacklahoma20.devpost.com/",
         "team": {
             "Amy Le": {
