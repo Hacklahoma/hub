@@ -1,7 +1,7 @@
 import React from 'react'
 import './index.scss'
 import Item from './Item'
-import archive from '../../archive';
+import archive from '../../config/archive';
 import animateScrollTo from 'animated-scroll-to';
 
 class Archive extends React.Component {

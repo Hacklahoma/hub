@@ -5,14 +5,14 @@ class Loading extends React.Component {
     render() {
         return (
             <div className="Loading">
-                <div class="container">
-                    <div class="ball"></div>
-                    <div class="ball"></div>
-                    <div class="ball"></div>
-                    <div class="ball"></div>
-                    <div class="ball"></div>
-                    <div class="ball"></div>
-                    <div class="ball"></div>
+                <div className="container">
+                    <div className="ball"></div>
+                    <div className="ball"></div>
+                    <div className="ball"></div>
+                    <div className="ball"></div>
+                    <div className="ball"></div>
+                    <div className="ball"></div>
+                    <div className="ball"></div>
                 </div>
             </div>
         );
