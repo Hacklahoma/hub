@@ -1,8 +1,12 @@
 import React from 'react'
-import './index.scss'
 import Item from './Item'
 import archive from '../../config/archive';
 import animateScrollTo from 'animated-scroll-to';
+import styled from 'styled-components';
+
+const StyledArchive = styled.div`
+    margin-top: 100px;
+`;
 
 class Archive extends React.Component {
     constructor(props) {
@@ -100,27 +104,30 @@ class Archive extends React.Component {
     }
 
     render() {
-        return(
-            <div className="Archive">
+        return (
+            <StyledArchive>
                 {/* Spawning items */}
-                {Object.keys(archive).reverse().map((key) =>
-                    <Item 
-                        year={key} 
-                        color={archive[key].color}
-                        participants={archive[key].participants}
-                        projects={archive[key].projects}
-                        ended={archive[key].ended}
-                        live={archive[key].live}
-                        devpost={archive[key].devpost}
-                        team={archive[key].team}
-                        // handles click
-                        click={this.handleClick}
-                        // controls whether it is expanded or not
-                        expanded={this.state.itemsExpanded[key]}
-                        // passing over key (useless but clears warnings)
-                        key={key} />
-                )}
-            </div>
+                {Object.keys(archive)
+                    .reverse()
+                    .map((key) => (
+                        <Item
+                            year={key}
+                            color={archive[key].color}
+                            participants={archive[key].participants}
+                            projects={archive[key].projects}
+                            ended={archive[key].ended}
+                            live={archive[key].live}
+                            devpost={archive[key].devpost}
+                            team={archive[key].team}
+                            // handles click
+                            click={this.handleClick}
+                            // controls whether it is expanded or not
+                            expanded={this.state.itemsExpanded[key]}
+                            // passing over key (useless but clears warnings)
+                            key={key}
+                        />
+                    ))}
+            </StyledArchive>
         );
     }
 }

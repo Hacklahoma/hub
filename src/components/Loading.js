@@ -1,11 +1,14 @@
-.Loading {
+import React from "react";
+import styled from "styled-components";
+
+const StyledLoading = styled.div`
     position: relative;
     height: 100vh;
     width: 100vw;
     background: rgb(79, 130, 204);
     .container {
         position: absolute;
-        opacity: .75;
+        opacity: 0.75;
         width: 200px;
         height: 100px;
         top: calc(50vh - 100px);
@@ -66,76 +69,46 @@
             animation: right 1s infinite ease-in-out;
         }
     }
+
+    @keyframes right {
+        0% {
+            transform: translate(-15px);
+        }
+        50% {
+            transform: translate(15px);
+        }
+        100% {
+            transform: translate(-15px);
+        }
+    }
+
+    @keyframes left {
+        0% {
+            transform: translate(15px);
+        }
+        50% {
+            transform: translate(-15px);
+        }
+        100% {
+            transform: translate(15px);
+        }
+    }
+`;
+
+function Loading() {
+    return (
+        <StyledLoading>
+            <div className="container">
+                <div className="ball"></div>
+                <div className="ball"></div>
+                <div className="ball"></div>
+                <div className="ball"></div>
+                <div className="ball"></div>
+                <div className="ball"></div>
+                <div className="ball"></div>
+            </div>
+        </StyledLoading>
+    );
 }
 
-@-webkit-keyframes right {
-    0% {
-        -webkit-transform: translate(-15px);
-    }
-    50% {
-        -webkit-transform: translate(15px);
-    }
-    100% {
-        -webkit-transform: translate(-15px);
-    }
-}
-
-@-webkit-keyframes left {
-    0% {
-        -webkit-transform: translate(15px);
-    }
-    50% {
-        -webkit-transform: translate(-15px);
-    }
-    100% {
-        -webkit-transform: translate(15px);
-    }
-}
-
-@-moz-keyframes right {
-    0% {
-        -moz-transform: translate(-15px);
-    }
-    50% {
-        -moz-transform: translate(15px);
-    }
-    100% {
-        -moz-transform: translate(-15px);
-    }
-}
-
-@-moz-keyframes left {
-    0% {
-        -moz-transform: translate(15px);
-    }
-    50% {
-        -moz-transform: translate(-15px);
-    }
-    100% {
-        -moz-transform: translate(15px);
-    }
-}
-
-@keyframes right {
-    0% {
-        transform: translate(-15px);
-    }
-    50% {
-        transform: translate(15px);
-    }
-    100% {
-        transform: translate(-15px);
-    }
-}
-
-@keyframes left {
-    0% {
-        transform: translate(15px);
-    }
-    50% {
-        transform: translate(-15px);
-    }
-    100% {
-        transform: translate(15px);
-    }
-}
+export default Loading;
