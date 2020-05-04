@@ -61,7 +61,7 @@ function Navbar() {
     }
 
     function smoothScrollTo(el) {
-        var element = document.getElementsByClassName(el)[0];
+        var element = document.getElementById(el);
         var headerOffset = 0;
         if (el === "About") headerOffset = 50;
         var elementPosition = element.getBoundingClientRect().top;

@@ -47,7 +47,7 @@ const StyledFooter = styled.div`
 
 function Footer() {
     return (
-        <StyledFooter>
+        <StyledFooter id="Footer">
             <Contact />
             <img className="trees" src={require("../../images/footerTrees.png")} alt="trees" />
             <img className="flyingLogo" src={require("../../images/flyingLogo.png")} alt="logo" />

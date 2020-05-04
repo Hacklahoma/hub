@@ -73,7 +73,7 @@ const StyledAbout = styled.div`
 
 function About() {
     return (
-        <StyledAbout>
+        <StyledAbout id="About">
             <div className="imageContent">
                 <Parallax
                     className="image"

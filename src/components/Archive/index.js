@@ -105,7 +105,7 @@ class Archive extends React.Component {
 
     render() {
         return (
-            <StyledArchive>
+            <StyledArchive id="Archive">
                 {/* Spawning items */}
                 {Object.keys(archive)
                     .reverse()
