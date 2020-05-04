@@ -45,9 +45,8 @@ function Contact() {
             <p>
                 We'd love to hear from you! Contact us at{" "}
                 <a href="mailto:team@hacklahoma.org">team@hacklahoma.org</a> or through social
-                media.
-                {/* If you plan on sponsoring us, please visit our <a href="sponsorPacket.pdf" target="_blank">Sponsor Packet</a>. */}
-                We look forward to hearing from you!
+                media. We even welcome suggestions! Send us what you’d like to see at our next
+                event.
             </p>
             <Social>
                 <a
