@@ -5,37 +5,44 @@ import general from "../../config/general";
 import styled from "styled-components";
 
 const StyledNavbar = styled.div`
-    position: relative;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 100;
     animation: slide-down 1s;
-    li {
-        cursor: pointer;
-        display: inline-block;
-        margin: 18px;
-        font-weight: bold;
-        font-size: 0.9em;
-        color: white;
-    }
-    li:nth-child(1) {
-        margin-left: 0;
-    }
-    li:nth-last-child(1) {
-        margin-right: 0;
-    }
-    .live {
+    box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+    background: white;
+    color: #1d1d1d;
+    .container {
         position: relative;
-        // top: 2px;
-        font-weight: 900;
-        font-size: 0.8em;
-        margin-left: 14px;
-        animation: pulse 1.5s linear alternate infinite;
-        a {
-            text-decoration: none;
-            color: white;
+        height: 52px;
+        margin: auto;
+        padding: 0 20px;
+        display: flex;
+        justify-content: space-between;
+        max-width: 850px;
+        .logo {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            img {
+                height: 90%;
+            }
+        }
+        .nav {
+            li {
+                list-style: none;
+                display: inline-block;
+                cursor: pointer;
+                padding: 15px 20px;
+                font-size: 1em;
+            }
+            li:hover {
+                text-decoration: underline;
+            }
         }
     }
-    .live:hover {
-        animation-play-state: paused;
-    }
+
     @keyframes slide-down {
         0% {
             top: -50px;
@@ -62,52 +69,47 @@ function Navbar() {
 
     function smoothScrollTo(el) {
         var element = document.getElementById(el);
-        var headerOffset = 0;
-        if (el === "About") headerOffset = 50;
+        var headerOffset = 50;
+        if (el === "About") headerOffset = 100;
         var elementPosition = element.getBoundingClientRect().top;
         var offsetPosition = elementPosition - headerOffset;
 
         window.scrollTo({
-            top: offsetPosition,
+            top: offsetPosition + window.pageYOffset,
             behavior: "smooth",
         });
     }
 
     return (
         <StyledNavbar>
-            <ul>
-                <li
-                    onClick={() => {
-                        smoothScrollTo("About");
-                    }}
-                >
-                    About
-                </li>
-                <li
-                    onClick={() => {
-                        smoothScrollTo("Archive");
-                    }}
-                >
-                    Archive
-                </li>
-                <li
-                    onClick={() => {
-                        smoothScrollTo("Footer");
-                    }}
-                >
-                    Contact
-                </li>
-                {showLive() ? (
-                    <Button href={"https://" + liveYear + ".hacklahoma.org"} color="live red">
-                        LIVE
-                    </Button>
-                ) : null}
-                {showJoin() ? (
-                    <Button href={"https://join.hacklahoma.org"} color="live green">
-                        Join the Team
-                    </Button>
-                ) : null}
-            </ul>
+            <div className="container">
+                <div className="logo">
+                    <img src={require("../../images/logo.png")} alt="" />
+                </div>
+                <ul className="nav">
+                    <li
+                        onClick={() => {
+                            smoothScrollTo("About");
+                        }}
+                    >
+                        about
+                    </li>
+                    <li
+                        onClick={() => {
+                            smoothScrollTo("Archive");
+                        }}
+                    >
+                        archive
+                    </li>
+                    <li
+                        onClick={() => {
+                            smoothScrollTo("Footer");
+                        }}
+                    >
+                        contact
+                    </li>
+                </ul>
+            </div>
         </StyledNavbar>
     );
 }

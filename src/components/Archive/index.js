@@ -72,7 +72,7 @@ class Archive extends React.Component {
                     // NEW METHOD
 
                     // scrollToPosition = [top position of item pressed] - [height of previous item content] + [offset]                     
-                    var scrollToPosition = document.getElementById(keyParam).offsetTop - document.getElementById(closed + "Content").offsetHeight + 100
+                    var scrollToPosition = document.getElementById(keyParam).offsetTop - document.getElementById(closed + "Content").offsetHeight + 50
                     animateScrollTo(scrollToPosition, {
                         maxDuration: 500,
                         minDuration: 500,
