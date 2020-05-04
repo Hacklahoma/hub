@@ -1,9 +1,79 @@
 import React from "react";
-import "./index.scss";
 import Content from "./Content";
 import { CSSTransition } from "react-transition-group";
 import AnimateHeight from "react-animate-height";
-import Button from "../../Button";
+import Button from "../Button";
+import styled from "styled-components";
+
+const StyledItem = styled.div`
+    position: relative;
+    width: 100vw;
+    overflow: visible;
+    .item-container {
+        z-index: 2;
+        display: inline-block;
+        width: 80vw;
+        max-width: 600px;
+        margin: 30px 0;
+        h1 {
+            .live {
+                position: relative;
+                font-size: 0.5em;
+                bottom: 6px;
+                animation: pulse 1.5s linear infinite alternate;
+            }
+            .live:hover {
+                animation-play-state: paused;
+            }
+            font-weight: 900;
+            text-align: left;
+            color: #2c3655;
+            margin-bottom: 12px;
+        }
+        .card {
+            z-index: 3;
+            cursor: pointer;
+            box-shadow: 2px 3px 30px -10px rgba(0, 0, 0, 0.2);
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            background: white;
+            border-radius: 20px;
+            height: 220px;
+            img {
+                height: 70%;
+            }
+        }
+    }
+
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+        }
+        100% {
+            transform: scale(1.1);
+        }
+    }
+
+    @keyframes contentFix {
+        0% {
+            margin-bottom: 0;
+        }
+        100% {
+            margin-bottom: -100px;
+        }
+    }
+
+    @media only screen and (max-width: 700px) {
+        .Item {
+            .card {
+                height: 160px !important;
+            }
+        }
+    }
+`;
 
 class Item extends React.Component {
     constructor(props) {
@@ -18,8 +88,8 @@ class Item extends React.Component {
 
     render() {
         return (
-            <div className="Item" id={this.props.year}>
-                <div className="container">
+            <StyledItem id={this.props.year}>
+                <div className="item-container">
                     {/* year and live if applicable */}
                     <h1>
                         {this.props.year}{" "}
@@ -40,7 +110,7 @@ class Item extends React.Component {
                     >
                         {/* logo */}
                         <img
-                            src={require("../../../images/logo" + this.props.year + ".png")}
+                            src={require("../../images/logo" + this.props.year + ".png")}
                             alt={this.props.year + " logo"}
                         />
                     </div>
@@ -74,7 +144,7 @@ class Item extends React.Component {
                         />
                     </CSSTransition>
                 </AnimateHeight>
-            </div>
+            </StyledItem>
         );
     }
 }
