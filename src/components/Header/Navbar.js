@@ -3,6 +3,9 @@ import archive from "../../config/archive";
 import general from "../../config/general";
 import styled from "styled-components";
 import animateScrollTo from "animated-scroll-to";
+import { FiBarChart2 } from "react-icons/fi";
+import { IoIosClose } from "react-icons/io";
+import { CSSTransition } from "react-transition-group";
 
 const StyledNavbar = styled.div`
     position: fixed;
@@ -14,14 +17,14 @@ const StyledNavbar = styled.div`
     }
     .banner {
         position: relative;
-        animation: slide-down .5s;
+        animation: slide-down 0.5s;
         z-index: 101;
         width: 100vw;
         height: 24px;
-        ${(props) => !(props.isJoin || props.isLive) && "display: none;"}
+        ${(props) => !(props.isJoin || props.isLive) && "display: none;"};
         background: ${(props) => (props.isLive ? "rgb(192, 90, 90)" : "#19BB79")};
         display: flex;
-        transition: background .25s;
+        transition: background 0.25s;
         p {
             color: white;
             margin: auto;
@@ -37,8 +40,8 @@ const StyledNavbar = styled.div`
         height: 52px;
         box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
         background: white;
-        ${(props) => (props.isScrolled ? "margin-top: 0;" : "margin-top: -72px;")}
-        transition: margin-top 0.30s;
+        ${(props) => (props.isScrolled ? "margin-top: 0;" : "margin-top: -72px;")};
+        transition: margin-top 0.3s;
     }
     .container {
         position: fixed;
@@ -58,11 +61,21 @@ const StyledNavbar = styled.div`
                 cursor: pointer;
                 display: flex;
                 align-items: center;
-                ${(props) => (props.isScrolled ? "margin-top: 0" : "margin-top: -72px")};
+                ${(props) => (props.isScrolled ? "margin-top: 0;" : "margin-top: -72px;")};
                 transition: margin-top 0.35s;
                 img {
                     height: 90%;
                 }
+            }
+            .icon {
+                transform: rotate(-90deg) scaleY(1.4);
+                animation: slide-down 1s;
+                cursor: pointer;
+                padding: 0 10px;
+                color: ${(props) => (props.isScrolled ? "#1d1d1d" : "white")};
+                transition: color 0.25s;
+                height: 100%;
+                width: 30px;
             }
             .nav {
                 animation: slide-down 1s;
@@ -79,9 +92,51 @@ const StyledNavbar = styled.div`
                     text-decoration: underline;
                 }
             }
+            .menu-enter {
+                margin-right: -170px;
+            }
+            .menu-enter-active {
+                margin-right: 0;
+                transition: margin-right 500ms;
+            }
+            .menu-exit {
+                margin-right: 0;
+            }
+            .menu-exit-active {
+                margin-right: -170px;
+                transition: margin-right 500ms;
+            }
+            .mobileMenu {
+                position: fixed;
+                box-shadow: -2px 0 8px rgba(0, 0, 0, 0.15);
+                right: 0;
+                top: 0;
+                background: white;
+                height: 100vh;
+                width: 170px;
+                .close {
+                    margin-top: 26px;
+                    color: rgb(192, 90, 90);
+                    cursor: pointer;
+                    height: 50px;
+                    width: 50px;
+                }
+                .nav {
+                    animation: none;
+                    margin-top: 20px;
+                    li {
+                        color: #1d1d1d;
+                        display: block;
+                        transition: 0.25s;
+                    }
+                    li:hover {
+                        background: #f6f6f6;
+                    }
+                }
+            }
         }
     }
-    
+
     @keyframes slide-down {
         0% {
             opacity: 0;
@@ -100,16 +155,32 @@ const StyledNavbar = styled.div`
 function Navbar() {
     var liveYear = "www";
     // Whether viewport is not at the top to reveal background of navbar
-    const [isScrolled, setScrolled] = React.useState();
+    const [isScrolled, setScrolled] = React.useState(false);
+    const [isMobile, setMobile] = React.useState(true);
+    const [isExpanded, setExpanded] = React.useState(false);
 
-    // On load, add listener to handle scrolling and control scroll state
+    // On load, add listener to handle scrolling and resizing
     React.useEffect(() => {
         onScroll();
+        onResize();
         window.addEventListener("scroll", onScroll);
+        window.addEventListener("resize", onResize);
+
+        document.body.style.transition = "margin .5s";
+
         return () => {
             window.removeEventListener("scroll", onScroll);
+            window.removeEventListener("resize", onResize);
         };
     }, []);
+
+    React.useEffect(() => {
+        if (isExpanded) {
+            document.body.style.margin = "0 0 0 -170px";
+        } else {
+            document.body.style.margin = "0";
+        }
+    }, [isExpanded]);
 
     // Sets scrolled state if user is within 5px of top of window
     function onScroll() {
@@ -117,6 +188,16 @@ function Navbar() {
             setScrolled(true);
         } else {
             setScrolled(false);
+        }
+    }
+
+    // Sets mobile state on resize
+    function onResize() {
+        if (window.innerWidth < 500) {
+            setMobile(true);
+        } else {
+            setExpanded(false);
+            setMobile(false);
         }
     }
 
@@ -166,6 +247,7 @@ function Navbar() {
 
     // Handles all smooth scrolling needs
     function smoothScrollTo(el) {
+        setExpanded(false);
         // Scroll to top of window
         if (el === "#") {
             animateScrollTo(0, {
@@ -187,6 +269,16 @@ function Navbar() {
         });
     }
 
+    function renderMenu() {
+        return (
+            <ul className="nav">
+                <li onClick={() => smoothScrollTo("About")}>about</li>
+                <li onClick={() => smoothScrollTo("Archive")}>archive</li>
+                <li onClick={() => smoothScrollTo("Footer")}>contact</li>
+            </ul>
+        );
+    }
+
     return (
         <StyledNavbar isJoin={isJoin()} isLive={isLive()} isScrolled={isScrolled}>
             {renderBanner()}
@@ -196,11 +288,37 @@ function Navbar() {
                     <div onClick={() => smoothScrollTo("#")} className="logo">
                         <img src={require("../../images/logo.png")} alt="" />
                     </div>
-                    <ul className="nav">
-                        <li onClick={() => smoothScrollTo("About")}>about</li>
-                        <li onClick={() => smoothScrollTo("Archive")}>archive</li>
-                        <li onClick={() => smoothScrollTo("Footer")}>contact</li>
-                    </ul>
+                    {isMobile ? (
+                        <div>
+                            <CSSTransition
+                                in={!isExpanded}
+                                timeout={100}
+                                classNames="menu"
+                                unmountOnExit
+                            >
+                                <FiBarChart2
+                                    className="icon"
+                                    onClick={() => setExpanded(!isExpanded)}
+                                />
+                            </CSSTransition>
+                            <CSSTransition
+                                in={isExpanded}
+                                timeout={500}
+                                classNames="menu"
+                                unmountOnExit
+                            >
+                                <div className="mobileMenu">
+                                    <IoIosClose
+                                        className="close"
+                                        onClick={() => setExpanded(!isExpanded)}
+                                    />
+                                    {renderMenu()}
+                                </div>
+                            </CSSTransition>
+                        </div>
+                    ) : (
+                        renderMenu()
+                    )}
                 </div>
             </div>
         </StyledNavbar>
