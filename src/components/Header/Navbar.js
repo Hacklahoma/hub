@@ -55,13 +55,14 @@ const StyledNavbar = styled.div`
             width: calc(100% - 40px);
             display: flex;
             justify-content: space-between;
+            align-items: center;
             max-width: 850px;
             .logo {
                 height: 100%;
                 cursor: pointer;
                 display: flex;
                 align-items: center;
-                ${(props) => (props.isScrolled ? "margin-top: 0;" : "margin-top: -72px;")};
+                ${(props) => (props.isScrolled ? "margin-top: 0;" : "margin-top: -150px;")};
                 transition: margin-top 0.35s;
                 img {
                     height: 90%;
