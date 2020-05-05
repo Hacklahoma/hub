@@ -13,6 +13,7 @@ const StyledNavbar = styled.div`
     }
     .banner {
         position: relative;
+        animation: slide-down .5s;
         z-index: 101;
         width: 100vw;
         height: 24px;
@@ -36,7 +37,7 @@ const StyledNavbar = styled.div`
         box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
         background: white;
         ${(props) => (props.isScrolled ? "margin-top: 0;" : "margin-top: -72px;")}
-        transition: margin-top 0.25s;
+        transition: margin-top 0.30s;
     }
     .container {
         position: fixed;
@@ -47,6 +48,7 @@ const StyledNavbar = styled.div`
             height: 52px;
             margin: auto;
             padding: 0 20px;
+            width: calc(100% - 40px);
             display: flex;
             justify-content: space-between;
             max-width: 850px;
@@ -56,12 +58,13 @@ const StyledNavbar = styled.div`
                 display: flex;
                 align-items: center;
                 ${(props) => (props.isScrolled ? "margin-top: 0" : "margin-top: -72px")};
-                transition: margin-top 0.25s;
+                transition: margin-top 0.35s;
                 img {
                     height: 90%;
                 }
             }
             .nav {
+                animation: slide-down 1s;
                 li {
                     list-style: none;
                     display: inline-block;
@@ -75,6 +78,20 @@ const StyledNavbar = styled.div`
                     text-decoration: underline;
                 }
             }
+        }
+    }
+    
+    @keyframes slide-down {
+        0% {
+            opacity: 0;
+            margin-top: -50px;
+        }
+        30% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+            margin-top: 0px;
         }
     }
 `;
