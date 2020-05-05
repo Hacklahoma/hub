@@ -1,5 +1,4 @@
 import React from "react";
-import "./index.scss";
 import Contact from "./Contact";
 import Copyright from "./Copyright";
 import footerGrass from "../../images/footerGrass1.png";

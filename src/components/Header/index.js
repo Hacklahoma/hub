@@ -98,7 +98,7 @@ const StyledHeader = styled.div`
 
 const Clouds = styled.div`
     position: relative;
-    margin-top: 50px;
+    margin-top: 102px; /* (constant * navbar height) */
     display: inline-block;
     height: 400px;
     max-width: 800px;

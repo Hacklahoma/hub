@@ -1,8 +1,8 @@
-import React from 'react'
-import Item from './Item'
-import archive from '../../config/archive';
-import animateScrollTo from 'animated-scroll-to';
-import styled from 'styled-components';
+import React from "react";
+import Item from "./Item";
+import archive from "../../config/archive";
+import animateScrollTo from "animated-scroll-to";
+import styled from "styled-components";
 
 const StyledArchive = styled.div`
     margin-top: 100px;
@@ -13,7 +13,7 @@ class Archive extends React.Component {
         super(props);
         this.state = {
             // controls all active items
-            itemsExpanded: {}
+            itemsExpanded: {},
         };
         this.handleClick = this.handleClick.bind(this);
     }
@@ -32,22 +32,20 @@ class Archive extends React.Component {
         }
 
         return (
-            top < (window.pageYOffset + window.innerHeight) &&
-            left < (window.pageXOffset + window.innerWidth) &&
-            (top + height) > window.pageYOffset &&
-            (left + width) > window.pageXOffset
+            top < window.pageYOffset + window.innerHeight &&
+            left < window.pageXOffset + window.innerWidth &&
+            top + height > window.pageYOffset &&
+            left + width > window.pageXOffset
         );
     }
 
     // closes all items when new one opens
-    handleClick(keyParam) {        
+    handleClick(keyParam) {
         // copying state
         var temp = this.state.itemsExpanded;
         // checking if any other archives are opened
         var othersOpened = false;
-        Object.keys(archive).map((key) =>
-            temp[key] !== 0 ? othersOpened = true : null
-        );
+        Object.keys(archive).map((key) => (temp[key] !== 0 ? (othersOpened = true) : null));
         // setting to 0 if item is already open
         if (temp[keyParam]) {
             temp[keyParam] = 0;
@@ -56,8 +54,8 @@ class Archive extends React.Component {
         else if (othersOpened) {
             var closed;
             // going through array and getting opened archive
-            Object.keys(archive).map((key) => 
-                temp[key] !== 0 ? (temp[key] = 0, closed = key) : null 
+            Object.keys(archive).map((key) =>
+                temp[key] !== 0 ? ((temp[key] = 0), (closed = key)) : null
             );
             // opening desired archive
             temp[keyParam] = "auto";
@@ -65,42 +63,35 @@ class Archive extends React.Component {
             if (parseInt(keyParam) < parseInt(closed)) {
                 // checking if element content being closed is in the viewport
                 if (this.elementInViewport(document.getElementById(closed + "Content"))) {
-                    // OLD METHOD
-                    // var node = document.getElementById(keyParam);
-                    // setTimeout(() => node.scrollIntoView({ behavior: "smooth"}), 500);
-
-                    // NEW METHOD
-
-                    // scrollToPosition = [top position of item pressed] - [height of previous item content] + [offset]                     
-                    var scrollToPosition = document.getElementById(keyParam).offsetTop - document.getElementById(closed + "Content").offsetHeight + 100
+                    // scrollToPosition = [top position of item pressed] - [height of previous item content] + [offset]
+                    var scrollToPosition =
+                        document.getElementById(keyParam).offsetTop -
+                        document.getElementById(closed + "Content").offsetHeight +
+                        50;
                     animateScrollTo(scrollToPosition, {
                         maxDuration: 500,
                         minDuration: 500,
-                        // easing: t => t
-                    })
+                    });
                 }
             }
-        }
-        else {
+        } else {
             temp[keyParam] = "auto";
         }
 
         // setting state
         this.setState({
-            itemsExpanded: temp
+            itemsExpanded: temp,
         });
     }
 
     componentDidMount() {
         var temp = {};
         // populating state with items
-        Object.keys(archive).map((key) =>
-            temp[key] = 0
-        );
+        Object.keys(archive).map((key) => (temp[key] = 0));
 
         this.setState({
-            itemsExpanded: temp
-        })
+            itemsExpanded: temp,
+        });
     }
 
     render() {
@@ -132,4 +123,4 @@ class Archive extends React.Component {
     }
 }
 
-export default Archive
+export default Archive;
