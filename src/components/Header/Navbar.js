@@ -87,7 +87,7 @@ const StyledNavbar = styled.div`
                     padding: 15px 20px;
                     font-size: 1em;
                     color: ${(props) => (props.isScrolled ? "#1d1d1d" : "white")};
-                    transition: color 0.25s;
+                    transition: background 0.25s, color 0.25s;
                 }
                 li:hover {
                     text-decoration: underline;
@@ -128,7 +128,6 @@ const StyledNavbar = styled.div`
                     li {
                         color: #1d1d1d;
                         display: block;
-                        transition: 0.25s;
                     }
                     li:hover {
                         background: #f6f6f6;
@@ -176,10 +175,20 @@ function Navbar() {
     }, []);
 
     React.useEffect(() => {
+        // Force close when clicking outside of menu
+        function handleClickOutside(e) {
+            if (window.innerWidth - e.screenX > 170) {
+                setExpanded(false);
+            }
+        }
+
         if (isExpanded) {
             document.body.style.margin = "0 0 0 -170px";
-        } else {
-            document.body.style.margin = "0";
+            window.addEventListener("click", handleClickOutside, true);
+            return () => {
+                window.removeEventListener("click", handleClickOutside, true);
+                document.body.style.margin = "0";
+            };
         }
     }, [isExpanded]);
 
