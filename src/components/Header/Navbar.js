@@ -2,6 +2,7 @@ import React from "react";
 import archive from "../../config/archive";
 import general from "../../config/general";
 import styled from "styled-components";
+import animateScrollTo from "animated-scroll-to";
 
 const StyledNavbar = styled.div`
     position: fixed;
@@ -167,9 +168,9 @@ function Navbar() {
     function smoothScrollTo(el) {
         // Scroll to top of window
         if (el === "#") {
-            window.scrollTo({
-                top: 0,
-                behavior: "smooth",
+            animateScrollTo(0, {
+                maxDuration: 500,
+                minDuration: 500,
             });
             return;
         }
@@ -180,9 +181,9 @@ function Navbar() {
         var elementPosition = element.getBoundingClientRect().top;
         var offsetPosition = elementPosition - headerOffset;
         // Execute scrollTo!
-        window.scrollTo({
-            top: offsetPosition + window.pageYOffset,
-            behavior: "smooth",
+        animateScrollTo(offsetPosition + window.pageYOffset, {
+            maxDuration: 500,
+            minDuration: 500,
         });
     }
 
