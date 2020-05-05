@@ -96,7 +96,7 @@ class Item extends React.Component {
                         {this.props.live ? (
                             <Button
                                 href={"https://" + this.props.year + ".hacklahoma.org"}
-                                color="live"
+                                color="live red"
                             >
                                 LIVE
                             </Button>

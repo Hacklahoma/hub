@@ -8,17 +8,39 @@ const StyledNavbar = styled.div`
     top: 0;
     width: 100vw;
     z-index: 100;
+    a {
+        text-decoration: none;
+    }
+    .banner {
+        position: relative;
+        z-index: 101;
+        width: 100vw;
+        height: 24px;
+        ${(props) => !(props.isJoin || props.isLive) && "display: none;"}
+        background: ${(props) => (props.isLive ? "rgb(192, 90, 90)" : "#19BB79")};
+        display: flex;
+        transition: background .25s;
+        p {
+            color: white;
+            margin: auto;
+            font-size: 0.8em;
+            font-weight: bold;
+        }
+    }
+    .banner:hover {
+        background: ${(props) => (props.isLive ? "rgb(177,84,84)" : "#16AA6E")};
+    }
     .background {
         width: 100vw;
         height: 52px;
         box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
         background: white;
-        ${(props) => (props.isScrolled ? "margin-top: 0;" : "margin-top: -52px;")}
+        ${(props) => (props.isScrolled ? "margin-top: 0;" : "margin-top: -72px;")}
         transition: margin-top 0.25s;
     }
     .container {
         position: fixed;
-        top: 0;
+        top: ${(props) => (props.isJoin || props.isLive ? "24px" : "0")};
         width: 100vw;
         .content {
             position: relative;
@@ -33,7 +55,7 @@ const StyledNavbar = styled.div`
                 cursor: pointer;
                 display: flex;
                 align-items: center;
-                ${(props) => (props.isScrolled ? "margin-top: 0" : "margin-top: -52px")};
+                ${(props) => (props.isScrolled ? "margin-top: 0" : "margin-top: -72px")};
                 transition: margin-top 0.25s;
                 img {
                     height: 90%;
@@ -91,6 +113,39 @@ function Navbar() {
         return general["joinButton"];
     }
 
+    // Renders the banner to join or to live site
+    function renderBanner() {
+        if (isLive()) {
+            return (
+                <a
+                    href={`https://${liveYear}.hacklahoma.org`}
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    alt=""
+                >
+                    <div className="banner">
+                        <p>Hacklahoma {liveYear} is LIVE!</p>
+                    </div>
+                </a>
+            );
+        } else if (isJoin())
+            return (
+                <a
+                    href="https://join.hacklahoma.org"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    alt=""
+                >
+                    <div className="banner">
+                        <p>Apply to join the team!</p>
+                    </div>
+                </a>
+            );
+        else {
+            return;
+        }
+    }
+
     // Handles all smooth scrolling needs
     function smoothScrollTo(el) {
         // Scroll to top of window
@@ -115,7 +170,8 @@ function Navbar() {
     }
 
     return (
-        <StyledNavbar isScrolled={isScrolled}>
+        <StyledNavbar isJoin={isJoin()} isLive={isLive()} isScrolled={isScrolled}>
+            {renderBanner()}
             <div className="background" />
             <div className="container">
                 <div className="content">
