@@ -70,7 +70,7 @@ const StyledNavbar = styled.div`
             }
             .icon {
                 transform: rotate(-90deg) scaleY(1.4);
-                animation: slide-down 1s;
+                animation: slide-down .5s;
                 cursor: pointer;
                 padding: 0 10px;
                 color: ${(props) => (props.isScrolled ? "#1d1d1d" : "white")};
@@ -79,7 +79,7 @@ const StyledNavbar = styled.div`
                 width: 30px;
             }
             .nav {
-                animation: slide-down 1s;
+                animation: slide-down .5s;
                 li {
                     list-style: none;
                     display: inline-block;
@@ -98,14 +98,14 @@ const StyledNavbar = styled.div`
             }
             .menu-enter-active {
                 margin-right: 0;
-                transition: margin-right 500ms;
+                transition: margin-right 250ms;
             }
             .menu-exit {
                 margin-right: 0;
             }
             .menu-exit-active {
                 margin-right: -170px;
-                transition: margin-right 500ms;
+                transition: margin-right 250ms;
             }
             .mobileMenu {
                 position: fixed;
@@ -116,7 +116,7 @@ const StyledNavbar = styled.div`
                 height: 100vh;
                 width: 170px;
                 .close {
-                    margin-top: 26px;
+                    margin-top: 22px;
                     color: rgb(192, 90, 90);
                     cursor: pointer;
                     height: 50px;
@@ -166,7 +166,7 @@ function Navbar() {
         window.addEventListener("scroll", onScroll);
         window.addEventListener("resize", onResize);
 
-        document.body.style.transition = "margin .5s";
+        document.body.style.transition = "margin .25s";
 
         return () => {
             window.removeEventListener("scroll", onScroll);
@@ -302,7 +302,7 @@ function Navbar() {
                         <div>
                             <CSSTransition
                                 in={!isExpanded}
-                                timeout={100}
+                                timeout={0}
                                 classNames="menu"
                                 unmountOnExit
                             >
@@ -313,7 +313,7 @@ function Navbar() {
                             </CSSTransition>
                             <CSSTransition
                                 in={isExpanded}
-                                timeout={500}
+                                timeout={250}
                                 classNames="menu"
                                 unmountOnExit
                             >
