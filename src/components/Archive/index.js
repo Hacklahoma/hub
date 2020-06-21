@@ -109,6 +109,7 @@ class Archive extends React.Component {
                             ended={archive[key].ended}
                             live={archive[key].live}
                             devpost={archive[key].devpost}
+                            website={archive[key].website}
                             team={archive[key].team}
                             // handles click
                             click={this.handleClick}

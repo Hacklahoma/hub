@@ -95,7 +95,7 @@ class Item extends React.Component {
                         {this.props.year}{" "}
                         {this.props.live ? (
                             <Button
-                                href={"https://" + this.props.year + ".hacklahoma.org"}
+                                href={this.props.website}
                                 color="live red"
                             >
                                 LIVE
@@ -141,6 +141,7 @@ class Item extends React.Component {
                             year={this.props.year}
                             team={this.props.team}
                             devpost={this.props.devpost}
+                            website={this.props.website}
                         />
                     </CSSTransition>
                 </AnimateHeight>

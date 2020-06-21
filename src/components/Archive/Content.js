@@ -25,9 +25,8 @@ const StyledContent = styled.div`
             }
         }
         .buttons {
-            margin-top: 20px;
             .Button {
-                margin: 0 5px;
+                margin: 20px 5px 0 5px;
             }
         }
     }
@@ -52,25 +51,21 @@ class Content extends React.Component {
     }
 
     renderButtons() {
+        var result = [];
+        if (this.props.website !== null) {
+            result.push(
+                <Button href={this.props.website} color="green">
+                    Website
+                </Button>
+            );
+        }
         if (this.props.devpost !== null)
-            return (
-                <div className="buttons">
-                    <Button href={"https://" + this.props.year + ".hacklahoma.org"} color="green">
-                        Website
-                    </Button>
-                    <Button href={this.props.devpost} color="blue">
-                        Devpost
-                    </Button>
-                </div>
+            result.push(
+                <Button href={this.props.devpost} color="blue">
+                    Devpost
+                </Button>
             );
-        else
-            return (
-                <div className="buttons">
-                    <Button href={"https://" + this.props.year + ".hacklahoma.org"} color="green">
-                        Website
-                    </Button>
-                </div>
-            );
+        return <div className="buttons">{result}</div>;
     }
 
     renderTeam() {
