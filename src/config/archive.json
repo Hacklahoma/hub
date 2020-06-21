@@ -6,6 +6,7 @@
         "ended": true,
         "live": false,
         "devpost": "https://hacklahoma18.devpost.com/",
+        "website": "https://2020.hacklahoma.org/",
         "team": {
             "John Tran": {
                 "image": "john-tran.jpg",
@@ -216,6 +217,7 @@
         "ended": true,
         "live": false,
         "devpost": "https://hacklahoma.devpost.com/",
+        "website": "https://2020.hacklahoma.org/",
         "team": {
             "John Tran": {
                 "image": "john-tran.jpg",
@@ -418,6 +420,7 @@
         "ended": true,
         "live": false,
         "devpost": "https://hacklahoma20.devpost.com/",
+        "website": "https://2020.hacklahoma.org/",
         "team": {
             "Amy Le": {
                 "image": "amy-le.jpg",
@@ -435,6 +438,14 @@
                 "linkedin": "https://www.linkedin.com/in/cole-chronowski/",
                 "github": "https://github.com/ColeChronowski"
             },
+            "Erica Luong": {
+                "image": "female.png",
+                "position": "Creative Director",
+                "instagram": "https://www.instagram.com/aishite_rika/",
+                "twitter": null,
+                "linkedin": null,
+                "github": "https://github.com/ericaluong"
+            },
             "Miguel Sanchez Marin": {
                 "image": "male.png",
                 "position": "Sponsoring & Finance Director",
@@ -443,37 +454,13 @@
                 "linkedin": null,
                 "github": null
             },
-            "Becka Nguyen": {
-                "image": "becka-nguyen.jpg",
-                "position": "Sponsor Liaison",
-                "instagram": null,
-                "twitter": null,
-                "linkedin": null,
-                "github": null
-            },
-            "Christina Nguyen": {
-                "image": "female.png",
-                "position": "Sponsor Liaison",
-                "instagram": null,
-                "twitter": null,
-                "linkedin": null,
-                "github": null
-            },
-            "Shihui Liu": {
-                "image": "shihui-liu.jpg",
-                "position": "Sponsor Liaison",
-                "instagram": "https://www.instagram.com/chipshihui/",
-                "twitter": null,
-                "linkedin": "https://www.linkedin.com/in/shihuiliu96/",
-                "github": null
-            },
-            "Erica Luong": {
-                "image": "female.png",
-                "position": "Creative Director",
-                "instagram": "https://www.instagram.com/aishite_rika/",
-                "twitter": null,
-                "linkedin": null,
-                "github": "https://github.com/ericaluong"
+            "Reagan Shirk": {
+                "image": "reagan-shirk.jpg",
+                "position": "Technology Director",
+                "instagram": "https://www.instagram.com/all_about_that_rage/",
+                "twitter": "https://twitter.com/allboutthatrage/",
+                "linkedin": "https://www.linkedin.com/in/reaganshirk/",
+                "github": "https://github.com/reaganshirk"
             },
             "John Alberse": {
                 "image": "john-alberse.jpg",
@@ -507,13 +494,29 @@
                 "linkedin": null,
                 "github": null
             },
-            "Reagan Shirk": {
-                "image": "reagan-shirk.jpg",
-                "position": "Technology Director",
-                "instagram": "https://www.instagram.com/all_about_that_rage/",
-                "twitter": "https://twitter.com/allboutthatrage/",
-                "linkedin": "https://www.linkedin.com/in/reaganshirk/",
-                "github": "https://github.com/reaganshirk"
+            "Becka Nguyen": {
+                "image": "becka-nguyen.jpg",
+                "position": "Sponsor Liaison",
+                "instagram": null,
+                "twitter": null,
+                "linkedin": null,
+                "github": null
+            },
+            "Christina Nguyen": {
+                "image": "female.png",
+                "position": "Sponsor Liaison",
+                "instagram": null,
+                "twitter": null,
+                "linkedin": null,
+                "github": null
+            },
+            "Shihui Liu": {
+                "image": "shihui-liu.jpg",
+                "position": "Sponsor Liaison",
+                "instagram": "https://www.instagram.com/chipshihui/",
+                "twitter": null,
+                "linkedin": "https://www.linkedin.com/in/shihuiliu96/",
+                "github": null
             },
             "Sam Fletcher": {
                 "image": "sam-fletcher.jpg",
@@ -550,6 +553,169 @@
             "Preetha Thanunathan": {
                 "image": "preetha-thanunathan.jpg",
                 "position": "Sponsor Experience Officer",
+                "instagram": null,
+                "twitter": null,
+                "linkedin": null,
+                "github": null
+            },
+            "Rafal Jabrzemski": {
+                "image": "male.png",
+                "position": "Adult in Residence",
+                "instagram": null,
+                "twitter": null,
+                "linkedin": null,
+                "github": null
+            }
+        }
+    },
+    "2021": {
+        "color": "#FFEDC5",
+        "participants": "300",
+        "projects": "60",
+        "ended": false,
+        "live": false,
+        "devpost": null,
+        "website": null,
+        "team": {
+            "Jennifer Droke": {
+                "image": "jennifer-droke.jpg",
+                "position": "Executive Director",
+                "instagram": null,
+                "twitter": "https://twitter.com/jwedjennifer",
+                "linkedin": "https://www.linkedin.com/in/jenniferdroke",
+                "github": "https://github.com/jwedj"
+            },
+            "Bibi Dang": {
+                "image": "bibi-dang.jpg",
+                "position": "Executive Director",
+                "instagram": null,
+                "twitter": null,
+                "linkedin": null,
+                "github": null
+            },
+            "Shihui Liu": {
+                "image": "shihui-liu.jpg",
+                "position": "Sponsoring & Finance Director",
+                "instagram": "https://www.instagram.com/chipshihui/",
+                "twitter": null,
+                "linkedin": "https://www.linkedin.com/in/shihuiliu96/",
+                "github": null
+            },
+            "Joseph Parackal": {
+                "image": "joseph-parackal.jpg",
+                "position": "Marketing Director",
+                "instagram": "https://www.instagram.com/j.j.p_/",
+                "twitter": null,
+                "linkedin": "https://www.linkedin.com/in/josephparackal2021",
+                "github": null
+            },
+            "Shelby Huffman": {
+                "image": "shelby-huffman.jpg",
+                "position": "Operations Director",
+                "instagram": "https://www.instagram.com/mr._.huffy/",
+                "twitter": null,
+                "linkedin": "https://www.linkedin.com/in/shelbyhuffy/",
+                "github": "https://github.com/Shleby"
+            },
+            "Sam Fletcher": {
+                "image": "sam-fletcher.jpg",
+                "position": "Technology Director",
+                "instagram": "https://www.instagram.com/sfletchertx/",
+                "twitter": null,
+                "linkedin": "https://www.linkedin.com/in/sfletchertx/",
+                "github": "https://www.github.com/s-fletcher/"
+            },
+            "Crystal Zhang": {
+                "image": "crystal-zhang.png",
+                "position": "Finance Liaison",
+                "instagram": null,
+                "twitter": null,
+                "linkedin": "https://www.linkedin.com/in/c-crystal-zhang/",
+                "github": null
+            },
+            "Theresa Nguyen": {
+                "image": "female.png",
+                "position": "Sponsor Liaison",
+                "instagram": null,
+                "twitter": null,
+                "linkedin": null,
+                "github": null
+            },
+            "Mandy Nguyen": {
+                "image": "female.png",
+                "position": "Sponsor Liaison",
+                "instagram": null,
+                "twitter": null,
+                "linkedin": null,
+                "github": null
+            },
+            "Peter Vo": {
+                "image": "male.png",
+                "position": "Sponsor Liaison",
+                "instagram": null,
+                "twitter": null,
+                "linkedin": null,
+                "github": null
+            },
+            "Jerrod Burns": {
+                "image": "male.png",
+                "position": "Marketing Strategist",
+                "instagram": null,
+                "twitter": null,
+                "linkedin": null,
+                "github": null
+            },
+            "Miki Cheng": {
+                "image": "male.png",
+                "position": "Public Relations Officer",
+                "instagram": null,
+                "twitter": null,
+                "linkedin": null,
+                "github": null
+            },
+            "Jennifer Pham": {
+                "image": "jennifer-pham.jpg",
+                "position": "Outreach Coordinator",
+                "instagram": "https://www.instagram.com/jenn.n.pham/",
+                "twitter": null,
+                "linkedin": "https://www.linkedin.com/in/jpham8010/",
+                "github": "https://github.com/JPham8010"
+            },
+            "Julie Nguyen": {
+                "image": "julie-nguyen.jpg",
+                "position": "Graphic Designer",
+                "instagram": "https://www.instagram.com/jewl.ee",
+                "twitter": null,
+                "linkedin": null,
+                "github": null
+            },
+            "Reagan Shirk": {
+                "image": "reagan-shirk.jpg",
+                "position": "Operations Officer",
+                "instagram": "https://www.instagram.com/all_about_that_rage",
+                "twitter": "https://twitter.com/allboutthatrage",
+                "linkedin": "https://www.linkedin.com/in/reaganshirk/",
+                "github": "https://github.com/reaganshirk"
+            },
+            "Braiden Maggia": {
+                "image": "male.png",
+                "position": "Operations Officer",
+                "instagram": null,
+                "twitter": null,
+                "linkedin": null,
+                "github": null
+            },
+            "Seth Gaglione": {
+                "image": "male.png",
+                "position": "Web Developer",
+                "instagram": null,
+                "twitter": null,
+                "linkedin": null,
+                "github": null
+            },
+            "Grant Eckstein": {
+                "image": "male.png",
+                "position": "Web Developer",
                 "instagram": null,
                 "twitter": null,
                 "linkedin": null,
