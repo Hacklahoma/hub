@@ -42,8 +42,12 @@ const StyledItem = styled.div`
             background: white;
             border-radius: 20px;
             height: 220px;
+            transition: filter 250ms;
             img {
                 height: 70%;
+            }
+            &:hover {
+                filter: brightness(95%);
             }
         }
     }
