@@ -1,11 +1,11 @@
-import React from "react";
-import archive from "../../config/archive";
-import general from "../../config/general";
-import styled from "styled-components";
-import animateScrollTo from "animated-scroll-to";
-import { FiBarChart2 } from "react-icons/fi";
-import { IoIosClose } from "react-icons/io";
-import { CSSTransition } from "react-transition-group";
+import React from 'react';
+import styled from 'styled-components';
+import animateScrollTo from 'animated-scroll-to';
+import { FiBarChart2 } from 'react-icons/fi';
+import { IoIosClose } from 'react-icons/io';
+import { CSSTransition } from 'react-transition-group';
+import general from '../../config/general';
+import archive from '../../config/archive';
 
 const StyledNavbar = styled.div`
     position: fixed;
@@ -21,8 +21,7 @@ const StyledNavbar = styled.div`
         z-index: 101;
         width: 100vw;
         height: 24px;
-        ${(props) => !(props.isJoin || props.isLive) && "display: none;"};
-        background: ${(props) => (props.isLive ? "rgb(192, 90, 90)" : "#19BB79")};
+        ${(props) => !(props.hasBanner) && 'display: none;'};
         display: flex;
         transition: background 0.25s;
         p {
@@ -31,21 +30,38 @@ const StyledNavbar = styled.div`
             font-size: 0.8em;
             font-weight: bold;
         }
+        &.red {
+          background: rgb(192, 90, 90);
+        }
+        &.green {
+          background: #19BB79;
+        }
+        &.black {
+          background: #212121;
+        }
     }
     .banner:hover {
-        background: ${(props) => (props.isLive ? "rgb(177,84,84)" : "#16AA6E")};
+        &.red {
+          background: rgb(177,84,84);
+        }
+        &.green {
+          background: #16AA6E;
+        }
+        &.black {
+          background: black;
+        }
     }
     .background {
         width: 100vw;
         height: 52px;
         box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
         background: white;
-        ${(props) => (props.isScrolled ? "margin-top: 0;" : "margin-top: -72px;")};
+        ${(props) => (props.isScrolled ? 'margin-top: 0;' : 'margin-top: -72px;')};
         transition: margin-top 0.3s;
     }
     .container {
         position: fixed;
-        top: ${(props) => (props.isJoin || props.isLive ? "24px" : "0")};
+        top: ${(props) => (props.hasBanner ? '24px' : '0')};
         width: 100vw;
         .content {
             position: relative;
@@ -62,7 +78,7 @@ const StyledNavbar = styled.div`
                 cursor: pointer;
                 display: flex;
                 align-items: center;
-                ${(props) => (props.isScrolled ? "margin-top: 0;" : "margin-top: -150px;")};
+                ${(props) => (props.isScrolled ? 'margin-top: 0;' : 'margin-top: -150px;')};
                 transition: margin-top 0.35s;
                 img {
                     height: 90%;
@@ -73,7 +89,7 @@ const StyledNavbar = styled.div`
                 animation: slide-down .5s;
                 cursor: pointer;
                 padding: 0 10px;
-                color: ${(props) => (props.isScrolled ? "#1d1d1d" : "white")};
+                color: ${(props) => (props.isScrolled ? '#1d1d1d' : 'white')};
                 transition: color 0.25s;
                 height: 100%;
                 width: 30px;
@@ -86,7 +102,7 @@ const StyledNavbar = styled.div`
                     cursor: pointer;
                     padding: 15px 20px;
                     font-size: 1em;
-                    color: ${(props) => (props.isScrolled ? "#1d1d1d" : "white")};
+                    color: ${(props) => (props.isScrolled ? '#1d1d1d' : 'white')};
                     transition: background 0.25s, color 0.25s;
                 }
                 li:hover {
@@ -153,186 +169,202 @@ const StyledNavbar = styled.div`
 `;
 
 function Navbar() {
-    var liveYear = "www";
-    // Whether viewport is not at the top to reveal background of navbar
-    const [isScrolled, setScrolled] = React.useState(false);
-    const [isMobile, setMobile] = React.useState(true);
-    const [isExpanded, setExpanded] = React.useState(false);
+  let liveYear = 'www';
+  // Whether viewport is not at the top to reveal background of navbar
+  const [isScrolled, setScrolled] = React.useState(false);
+  const [isMobile, setMobile] = React.useState(true);
+  const [isExpanded, setExpanded] = React.useState(false);
 
-    // On load, add listener to handle scrolling and resizing
-    React.useEffect(() => {
-        onScroll();
-        onResize();
-        window.addEventListener("scroll", onScroll);
-        window.addEventListener("resize", onResize);
+  // On load, add listener to handle scrolling and resizing
+  React.useEffect(() => {
+    onScroll();
+    onResize();
+    window.addEventListener('scroll', onScroll);
+    window.addEventListener('resize', onResize);
 
-        document.body.style.transition = "margin .25s";
+    document.body.style.transition = 'margin .25s';
 
-        return () => {
-            window.removeEventListener("scroll", onScroll);
-            window.removeEventListener("resize", onResize);
-        };
-    }, []);
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('resize', onResize);
+    };
+  }, []);
 
-    React.useEffect(() => {
-        // Force close when clicking outside of menu
-        function handleClickOutside(e) {
-            if (window.innerWidth - e.screenX > 170) {
-                setExpanded(false);
-            }
-        }
-
-        if (isExpanded) {
-            document.body.style.margin = "0 0 0 -170px";
-            window.addEventListener("click", handleClickOutside, true);
-            return () => {
-                window.removeEventListener("click", handleClickOutside, true);
-                document.body.style.margin = "0";
-            };
-        }
-    }, [isExpanded]);
-
-    // Sets scrolled state if user is within 5px of top of window
-    function onScroll() {
-        if (window.pageYOffset >= 5) {
-            setScrolled(true);
-        } else {
-            setScrolled(false);
-        }
-    }
-
-    // Sets mobile state on resize
-    function onResize() {
-        if (window.innerWidth < 500) {
-            setMobile(true);
-        } else {
-            setExpanded(false);
-            setMobile(false);
-        }
-    }
-
-    // Whether event is live
-    function isLive() {
-        Object.keys(archive).map((key) => (archive[key].live ? (liveYear = key) : null));
-        return liveYear !== "www";
-    }
-
-    // Whether we are accepting applicants for exec
-    function isJoin() {
-        return general["joinButton"];
-    }
-
-    // Renders the banner to join or to live site
-    function renderBanner() {
-        if (isLive()) {
-            return (
-                <a
-                    href={`https://${liveYear}.hacklahoma.org`}
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    alt=""
-                >
-                    <div className="banner">
-                        <p>Hacklahoma {liveYear} is LIVE!</p>
-                    </div>
-                </a>
-            );
-        } else if (isJoin())
-            return (
-                <a
-                    href="https://join.hacklahoma.org"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    alt=""
-                >
-                    <div className="banner">
-                        <p>Apply to join the team!</p>
-                    </div>
-                </a>
-            );
-        else {
-            return;
-        }
-    }
-
-    // Handles all smooth scrolling needs
-    function smoothScrollTo(el) {
+  React.useEffect(() => {
+    // Force close when clicking outside of menu
+    function handleClickOutside(e) {
+      if (window.innerWidth - e.screenX > 170) {
         setExpanded(false);
-        // Scroll to top of window
-        if (el === "#") {
-            animateScrollTo(0, {
-                maxDuration: 500,
-                minDuration: 500,
-            });
-            return;
-        }
-        // Get element and determine where to scroll
-        var element = document.getElementById(el);
-        var headerOffset = 50;
-        if (el === "About") headerOffset = 100;
-        var elementPosition = element.getBoundingClientRect().top;
-        var offsetPosition = elementPosition - headerOffset;
-        // Execute scrollTo!
-        animateScrollTo(offsetPosition + window.pageYOffset, {
-            maxDuration: 500,
-            minDuration: 500,
-        });
+      }
     }
 
-    function renderMenu() {
-        return (
-            <ul className="nav">
-                <li onClick={() => smoothScrollTo("About")}>about</li>
-                <li onClick={() => smoothScrollTo("Archive")}>archive</li>
-                <li onClick={() => smoothScrollTo("Footer")}>contact</li>
-            </ul>
-        );
+    if (isExpanded) {
+      document.body.style.margin = '0 0 0 -170px';
+      window.addEventListener('click', handleClickOutside, true);
+      return () => {
+        window.removeEventListener('click', handleClickOutside, true);
+        document.body.style.margin = '0';
+      };
     }
+  }, [isExpanded]);
 
+  // Sets scrolled state if user is within 5px of top of window
+  function onScroll() {
+    if (window.pageYOffset >= 5) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  }
+
+  // Sets mobile state on resize
+  function onResize() {
+    if (window.innerWidth < 500) {
+      setMobile(true);
+    } else {
+      setExpanded(false);
+      setMobile(false);
+    }
+  }
+
+  // Whether event is live
+  function isLive() {
+    Object.keys(archive).map((key) => (archive[key].live ? (liveYear = key) : null));
+    return liveYear !== 'www';
+  }
+
+  // Whether we are accepting applicants for exec
+  function isJoin() {
+    return general.joinBanner;
+  }
+
+  // Whether we are accepting applicants for exec
+  function isBLM() {
+    return general.BLMBanner;
+  }
+
+  // Renders the banner to join or to live site
+  function renderBanner() {
+    if (isLive()) {
+      return (
+        <a
+          href={`https://${liveYear}.hacklahoma.org`}
+          rel="noopener noreferrer"
+          target="_blank"
+          alt=""
+        >
+          <div className="banner red">
+            <p>Hacklahoma {liveYear} is LIVE!</p>
+          </div>
+        </a>
+      );
+    } if (isJoin()) {
+      return (
+        <a
+          href="https://join.hacklahoma.org"
+          rel="noopener noreferrer"
+          target="_blank"
+          alt=""
+        >
+          <div className="banner green">
+            <p>Apply to join the team!</p>
+          </div>
+        </a>
+      );
+    } if (isBLM()) {
+      return (
+        <a
+          href="https://blacklivesmatters.carrd.co/"
+          rel="noopener noreferrer"
+          target="_blank"
+          alt=""
+        >
+          <div className="banner black">
+            <p>Black Lives Matter. Ways You Can Help.</p>
+          </div>
+        </a>
+      );
+    }
+  }
+
+  // Handles all smooth scrolling needs
+  function smoothScrollTo(el) {
+    setExpanded(false);
+    // Scroll to top of window
+    if (el === '#') {
+      animateScrollTo(0, {
+        maxDuration: 500,
+        minDuration: 500,
+      });
+      return;
+    }
+    // Get element and determine where to scroll
+    const element = document.getElementById(el);
+    let headerOffset = 50;
+    if (el === 'About') headerOffset = 100;
+    const elementPosition = element.getBoundingClientRect().top;
+    const offsetPosition = elementPosition - headerOffset;
+    // Execute scrollTo!
+    animateScrollTo(offsetPosition + window.pageYOffset, {
+      maxDuration: 500,
+      minDuration: 500,
+    });
+  }
+
+  function renderMenu() {
     return (
-        <StyledNavbar isJoin={isJoin()} isLive={isLive()} isScrolled={isScrolled}>
-            {renderBanner()}
-            <div className="background" />
-            <div className="container">
-                <div className="content">
-                    <div onClick={() => smoothScrollTo("#")} className="logo">
-                        <img src={require("../../images/logo.png")} alt="" />
-                    </div>
-                    {isMobile ? (
-                        <div>
-                            <CSSTransition
-                                in={!isExpanded}
-                                timeout={0}
-                                classNames="menu"
-                                unmountOnExit
-                            >
-                                <FiBarChart2
-                                    className="icon"
-                                    onClick={() => setExpanded(!isExpanded)}
-                                />
-                            </CSSTransition>
-                            <CSSTransition
-                                in={isExpanded}
-                                timeout={250}
-                                classNames="menu"
-                                unmountOnExit
-                            >
-                                <div className="mobileMenu">
-                                    <IoIosClose
-                                        className="close"
-                                        onClick={() => setExpanded(!isExpanded)}
-                                    />
-                                    {renderMenu()}
-                                </div>
-                            </CSSTransition>
-                        </div>
-                    ) : (
-                        renderMenu()
-                    )}
-                </div>
-            </div>
-        </StyledNavbar>
+      <ul className="nav">
+        <li onClick={() => smoothScrollTo('About')}>about</li>
+        <li onClick={() => smoothScrollTo('Archive')}>archive</li>
+        <li onClick={() => smoothScrollTo('Footer')}>contact</li>
+      </ul>
     );
+  }
+
+  return (
+    <StyledNavbar hasBanner={isJoin() || isLive() || isBLM()} isScrolled={isScrolled}>
+      {renderBanner()}
+      <div className="background" />
+      <div className="container">
+        <div className="content">
+          <div onClick={() => smoothScrollTo('#')} className="logo">
+            <img src={require('../../images/logo.png')} alt="" />
+          </div>
+          {isMobile ? (
+            <div>
+              <CSSTransition
+                in={!isExpanded}
+                timeout={0}
+                classNames="menu"
+                unmountOnExit
+              >
+                <FiBarChart2
+                  className="icon"
+                  onClick={() => setExpanded(!isExpanded)}
+                />
+              </CSSTransition>
+              <CSSTransition
+                in={isExpanded}
+                timeout={250}
+                classNames="menu"
+                unmountOnExit
+              >
+                <div className="mobileMenu">
+                  <IoIosClose
+                    className="close"
+                    onClick={() => setExpanded(!isExpanded)}
+                  />
+                  {renderMenu()}
+                </div>
+              </CSSTransition>
+            </div>
+          ) : (
+            renderMenu()
+          )}
+        </div>
+      </div>
+    </StyledNavbar>
+  );
 }
 
 export default Navbar;
