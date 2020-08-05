@@ -1,6 +1,6 @@
-import React from "react";
-import Member from "./Member";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
+import Member from './Member';
 
 const StyledTeam = styled.div`
     h1 {
@@ -38,27 +38,27 @@ const StyledTeam = styled.div`
 `;
 
 class Team extends React.Component {
-    render() {
-        return (
-            <StyledTeam>
-                <h1>Meet the Team</h1>
-                <div className="team">
-                    {Object.keys(this.props.team).map((key) => (
-                        <Member
-                            key={key}
-                            name={key}
-                            image={this.props.team[key].image}
-                            position={this.props.team[key].position}
-                            instagram={this.props.team[key].instagram}
-                            twitter={this.props.team[key].twitter}
-                            linkedin={this.props.team[key].linkedin}
-                            github={this.props.team[key].github}
-                        />
-                    ))}
-                </div>
-            </StyledTeam>
-        );
-    }
+  render() {
+    return (
+      <StyledTeam>
+        <h1>Meet the Team</h1>
+        <div className="team">
+          {Object.keys(this.props.team).map((key) => (
+            <Member
+              key={key}
+              name={key}
+              image={this.props.team[key].image}
+              position={this.props.team[key].position}
+              instagram={this.props.team[key].instagram}
+              twitter={this.props.team[key].twitter}
+              linkedin={this.props.team[key].linkedin}
+              github={this.props.team[key].github}
+            />
+          ))}
+        </div>
+      </StyledTeam>
+    );
+  }
 }
 
 export default Team;

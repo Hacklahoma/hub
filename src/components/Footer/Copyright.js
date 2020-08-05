@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
 const StyledCopyright = styled.div`
     font-size: 0.7em;
@@ -11,7 +11,7 @@ const StyledCopyright = styled.div`
 `;
 
 function Copyright() {
-    return <StyledCopyright>Copyright © 2020 Hacklahoma ~ Made with ♡ in Norman</StyledCopyright>;
+  return <StyledCopyright>Copyright © 2020 Hacklahoma ~ Made with ♡ in Norman</StyledCopyright>;
 }
 
 export default Copyright;

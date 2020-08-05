@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
 const StyledLoading = styled.div`
     position: relative;
@@ -96,19 +96,19 @@ const StyledLoading = styled.div`
 `;
 
 function Loading() {
-    return (
-        <StyledLoading>
-            <div className="container">
-                <div className="ball"></div>
-                <div className="ball"></div>
-                <div className="ball"></div>
-                <div className="ball"></div>
-                <div className="ball"></div>
-                <div className="ball"></div>
-                <div className="ball"></div>
-            </div>
-        </StyledLoading>
-    );
+  return (
+    <StyledLoading>
+      <div className="container">
+        <div className="ball" />
+        <div className="ball" />
+        <div className="ball" />
+        <div className="ball" />
+        <div className="ball" />
+        <div className="ball" />
+        <div className="ball" />
+      </div>
+    </StyledLoading>
+  );
 }
 
 export default Loading;

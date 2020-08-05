@@ -359,8 +359,8 @@ function Navbar() {
               </CSSTransition>
             </div>
           ) : (
-            renderMenu()
-          )}
+              renderMenu()
+            )}
         </div>
       </div>
     </StyledNavbar>

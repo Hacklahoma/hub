@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
 const StyledButton = styled.div`
     display: inline-block;
@@ -64,15 +64,15 @@ const StyledButton = styled.div`
 `;
 
 function Button({ color, children, href }) {
-    return (
-        <StyledButton>
-            <div className={"Button " + color}>
-                <a target="_blank" rel="noopener noreferrer" href={href}>
-                    {children}
-                </a>
-            </div>
-        </StyledButton>
-    );
+  return (
+    <StyledButton>
+      <div className={`Button ${color}`}>
+        <a target="_blank" rel="noopener noreferrer" href={href}>
+          {children}
+        </a>
+      </div>
+    </StyledButton>
+  );
 }
 
 export default Button;

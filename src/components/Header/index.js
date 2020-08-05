@@ -1,7 +1,7 @@
-import React from "react";
-import Navbar from "./Navbar";
-import cloud from "../../images/cloud.png";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
+import Navbar from './Navbar';
+import cloud from '../../images/cloud.png';
 
 const StyledHeader = styled.div`
     height: 800px;
@@ -184,29 +184,29 @@ const Clouds = styled.div`
 `;
 
 function Header() {
-    return (
-        <StyledHeader>
-            <img className="cover" src={require("../../images/headerBackground.svg")} alt="" />
-            <Navbar />
-            <div className="content">
-                <Clouds>
-                    <div className="cloudFade">
-                        <div className="cloud"></div>
-                    </div>
-                    <div className="cloudFade">
-                        <div className="cloud"></div>
-                    </div>
-                    <div className="cloudFade">
-                        <div className="cloud"></div>
-                    </div>
-                </Clouds>
-                <div className="brandContent">
-                    <img src={require("../../images/flyingLogo.png")} alt="logo" />
-                    <h1>Hacklahoma</h1>
-                </div>
-            </div>
-        </StyledHeader>
-    );
+  return (
+    <StyledHeader>
+      <img className="cover" src={require('../../images/headerBackground.svg')} alt="" />
+      <Navbar />
+      <div className="content">
+        <Clouds>
+          <div className="cloudFade">
+            <div className="cloud" />
+          </div>
+          <div className="cloudFade">
+            <div className="cloud" />
+          </div>
+          <div className="cloudFade">
+            <div className="cloud" />
+          </div>
+        </Clouds>
+        <div className="brandContent">
+          <img src={require('../../images/flyingLogo.png')} alt="logo" />
+          <h1>Hacklahoma</h1>
+        </div>
+      </div>
+    </StyledHeader>
+  );
 }
 
 export default Header;

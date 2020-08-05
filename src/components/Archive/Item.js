@@ -1,9 +1,9 @@
-import React from "react";
-import Content from "./Content";
-import { CSSTransition } from "react-transition-group";
-import AnimateHeight from "react-animate-height";
-import Button from "../Button";
-import styled from "styled-components";
+import React from 'react';
+import { CSSTransition } from 'react-transition-group';
+import AnimateHeight from 'react-animate-height';
+import styled from 'styled-components';
+import Button from '../Button';
+import Content from './Content';
 
 const StyledItem = styled.div`
     position: relative;
@@ -80,78 +80,78 @@ const StyledItem = styled.div`
 `;
 
 class Item extends React.Component {
-    constructor(props) {
-        super(props);
-        this.handleClick = this.handleClick.bind(this);
-    }
+  constructor(props) {
+    super(props);
+    this.handleClick = this.handleClick.bind(this);
+  }
 
-    handleClick() {
-        // calls parent component to set expanded to false
-        this.props.click(this.props.year);
-    }
+  handleClick() {
+    // calls parent component to set expanded to false
+    this.props.click(this.props.year);
+  }
 
-    render() {
-        return (
-            <StyledItem id={this.props.year}>
-                <div className="item-container">
-                    {/* year and live if applicable */}
-                    <h1>
-                        {this.props.year}{" "}
-                        {this.props.live ? (
-                            <Button
-                                href={this.props.website}
-                                color="live red"
-                            >
-                                LIVE
-                            </Button>
-                        ) : null}
-                    </h1>
-                    {/* card */}
-                    <div
-                        onClick={this.handleClick}
-                        style={{ background: this.props.color }}
-                        className="card"
-                    >
-                        {/* logo */}
-                        <img
-                            src={require("../../images/logo" + this.props.year + ".png")}
-                            alt={this.props.year + " logo"}
-                        />
-                    </div>
-                </div>
+  render() {
+    return (
+      <StyledItem id={this.props.year}>
+        <div className="item-container">
+          {/* year and live if applicable */}
+          <h1>
+            {this.props.year}{' '}
+            {this.props.live ? (
+              <Button
+                href={this.props.website}
+                color="live red"
+              >
+                LIVE
+              </Button>
+            ) : null}
+          </h1>
+          {/* card */}
+          <div
+            onClick={this.handleClick}
+            style={{ background: this.props.color }}
+            className="card"
+          >
+            {/* logo */}
+            <img
+              src={require(`../../images/logo${this.props.year}.png`)}
+              alt={`${this.props.year} logo`}
+            />
+          </div>
+        </div>
 
-                {/* Transition function to show if expanded is true and animate */}
-                <AnimateHeight
-                    duration={500}
-                    height={this.props.expanded === undefined ? 0 : this.props.expanded}
-                    easing="ease"
-                    style={{
-                        position: "relative",
-                        marginBottom: this.props.expanded === "auto" ? "-100px" : "0",
-                        transition: ".5s",
-                        bottom: "130px",
-                    }}
-                >
-                    <CSSTransition
-                        in={this.props.expanded === 0 ? false : true}
-                        timeout={500}
-                        classNames="item"
-                        unmountOnExit
-                    >
-                        <Content
-                            ended={this.props.ended}
-                            participants={this.props.participants}
-                            projects={this.props.projects}
-                            year={this.props.year}
-                            team={this.props.team}
-                            devpost={this.props.devpost}
-                            website={this.props.website}
-                        />
-                    </CSSTransition>
-                </AnimateHeight>
-            </StyledItem>
-        );
-    }
+        {/* Transition function to show if expanded is true and animate */}
+        <AnimateHeight
+          duration={500}
+          height={this.props.expanded === undefined ? 0 : this.props.expanded}
+          easing="ease"
+          style={{
+            position:     'relative',
+            marginBottom: this.props.expanded === 'auto' ? '-100px' : '0',
+            transition:   '.5s',
+            bottom:       '130px',
+          }}
+        >
+          <CSSTransition
+            in={this.props.expanded !== 0}
+            timeout={500}
+            classNames="item"
+            unmountOnExit
+          >
+            <Content
+              ended={this.props.ended}
+              participants={this.props.participants}
+              projects={this.props.projects}
+              year={this.props.year}
+              team={this.props.team}
+              devpost={this.props.devpost}
+              website={this.props.website}
+            />
+          </CSSTransition>
+        </AnimateHeight>
+      </StyledItem>
+    );
+  }
 }
 
 export default Item;

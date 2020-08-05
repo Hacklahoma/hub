@@ -1,8 +1,8 @@
-import React from "react";
-import Contact from "./Contact";
-import Copyright from "./Copyright";
-import footerGrass from "../../images/footerGrass1.png";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
+import Contact from './Contact';
+import Copyright from './Copyright';
+import footerGrass from '../../images/footerGrass1.png';
 
 const StyledFooter = styled.div`
     margin-top: 150px;
@@ -45,14 +45,14 @@ const StyledFooter = styled.div`
 `;
 
 function Footer() {
-    return (
-        <StyledFooter id="Footer">
-            <Contact />
-            <img className="trees" src={require("../../images/footerTrees.png")} alt="trees" />
-            <img className="flyingLogo" src={require("../../images/flyingLogo.png")} alt="logo" />
-            <Copyright />
-        </StyledFooter>
-    );
+  return (
+    <StyledFooter id="Footer">
+      <Contact />
+      <img className="trees" src={require('../../images/footerTrees.png')} alt="trees" />
+      <img className="flyingLogo" src={require('../../images/flyingLogo.png')} alt="logo" />
+      <Copyright />
+    </StyledFooter>
+  );
 }
 
 export default Footer;

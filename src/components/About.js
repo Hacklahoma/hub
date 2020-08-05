@@ -1,6 +1,6 @@
-import React from "react";
-import { Parallax } from "react-parallax";
-import styled from "styled-components";
+import React from 'react';
+import { Parallax } from 'react-parallax';
+import styled from 'styled-components';
 
 const StyledAbout = styled.div`
     position: relative;
@@ -72,32 +72,32 @@ const StyledAbout = styled.div`
 `;
 
 function About() {
-    return (
-        <StyledAbout id="About">
-            <div className="imageContent">
-                <Parallax
-                    className="image"
-                    bgImage={require("../images/about.jpg")}
-                    bgImageStyle={{
-                        borderRadius: "8px",
-                        width: "100%",
-                        overflow: "hidden",
-                        userSelect: "none",
-                    }}
-                    bgImageAlt="hacklahoma team"
-                    strength={-50}
-                />
-            </div>
-            <div className="content">
-                <h1>We Organize Hackathons</h1>
-                <p>
-                    Our mission is to kindle creativity and innovation in our Oklahoma community. We
-                    invite students from across the country to collaborate, develop, and share their
-                    projects with us through a 24 hour hackathon at the University of Oklahoma.
-                </p>
-            </div>
-        </StyledAbout>
-    );
+  return (
+    <StyledAbout id="About">
+      <div className="imageContent">
+        <Parallax
+          className="image"
+          bgImage={require('../images/about.jpg')}
+          bgImageStyle={{
+            borderRadius: '8px',
+            width:        '100%',
+            overflow:     'hidden',
+            userSelect:   'none',
+          }}
+          bgImageAlt="hacklahoma team"
+          strength={-50}
+        />
+      </div>
+      <div className="content">
+        <h1>We Organize Hackathons</h1>
+        <p>
+          Our mission is to kindle creativity and innovation in our Oklahoma community. We
+          invite students from across the country to collaborate, develop, and share their
+          projects with us through a 24 hour hackathon at the University of Oklahoma.
+        </p>
+      </div>
+    </StyledAbout>
+  );
 }
 
 export default About;

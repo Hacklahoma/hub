@@ -1,7 +1,7 @@
-import React from "react";
-import Button from "../Button";
-import Team from "./Team";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
+import Button from '../Button';
+import Team from './Team';
 
 const StyledContent = styled.div`
     position: relative;
@@ -33,73 +33,74 @@ const StyledContent = styled.div`
 `;
 
 class Content extends React.Component {
-    renderInfo() {
-        if (this.props.ended)
-            return (
-                <p className="info">
-                    This year we had <code>{this.props.participants} participants</code> and{" "}
-                    <code>{this.props.projects} projects</code> submitted.
-                </p>
-            );
-        else
-            return (
-                <p className="info">
-                    This year we expect <code>{this.props.participants} participants</code> and{" "}
-                    <code>{this.props.projects} project</code> submissions.
-                </p>
-            );
+  renderInfo() {
+    if (this.props.ended) {
+      return (
+        <p className="info">
+          This year we had <code>{this.props.participants} participants</code> and{' '}
+          <code>{this.props.projects} projects</code> submitted.
+        </p>
+      );
     }
+    return (
+      <p className="info">
+        This year we expect <code>{this.props.participants} participants</code> and{' '}
+        <code>{this.props.projects} project</code> submissions.
+      </p>
+    );
+  }
 
-    renderButtons() {
-        var result = [];
-        if (this.props.website !== null) {
-            result.push(
-                <Button href={this.props.website} color="green">
-                    Website
-                </Button>
-            );
-        }
-        if (this.props.devpost !== null)
-            result.push(
-                <Button href={this.props.devpost} color="blue">
-                    Devpost
-                </Button>
-            );
-        return <div className="buttons">{result}</div>;
+  renderButtons() {
+    const result = [];
+    if (this.props.website !== null) {
+      result.push(
+        <Button href={this.props.website} color="green">
+          Website
+        </Button>,
+      );
     }
+    if (this.props.devpost !== null) {
+      result.push(
+        <Button href={this.props.devpost} color="blue">
+          Devpost
+        </Button>,
+      );
+    }
+    return <div className="buttons">{result}</div>;
+  }
 
-    renderTeam() {
-        return (
-            <div className="team">
-                {Object.keys(this.props.team).map((key) => this.renderMember(key))}
-            </div>
-        );
-    }
+  renderTeam() {
+    return (
+      <div className="team">
+        {Object.keys(this.props.team).map((key) => this.renderMember(key))}
+      </div>
+    );
+  }
 
-    renderMember(key) {
-        var image = <div className="image"></div>;
-        return (
-            <div key={key} className="member">
-                {image}
-                <br />
-                {key}
-                <br />
-                {this.props.team[key].position}
-            </div>
-        );
-    }
+  renderMember(key) {
+    const image = <div className="image" />;
+    return (
+      <div key={key} className="member">
+        {image}
+        <br />
+        {key}
+        <br />
+        {this.props.team[key].position}
+      </div>
+    );
+  }
 
-    render() {
-        return (
-            <StyledContent id={this.props.year + "Content"}>
-                <div className="content-container">{this.renderInfo()}</div>
-                <div className="content-container">{this.renderButtons()}</div>
-                <div className="content-container">
-                    <Team team={this.props.team} />
-                </div>
-            </StyledContent>
-        );
-    }
+  render() {
+    return (
+      <StyledContent id={`${this.props.year}Content`}>
+        <div className="content-container">{this.renderInfo()}</div>
+        <div className="content-container">{this.renderButtons()}</div>
+        <div className="content-container">
+          <Team team={this.props.team} />
+        </div>
+      </StyledContent>
+    );
+  }
 }
 
 export default Content;
