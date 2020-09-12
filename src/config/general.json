@@ -1,4 +1,4 @@
 {
-  "joinBanner": false,
-  "BLMBanner": true
+  "joinBanner": true,
+  "BLMBanner": false
 }
