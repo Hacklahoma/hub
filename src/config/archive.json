@@ -575,16 +575,8 @@
         "ended": false,
         "live": false,
         "devpost": null,
-        "website": null,
+        "website": "https://2021.hacklahoma.org/",
         "team": {
-            "Jennifer Droke": {
-                "image": "jennifer-droke.jpg",
-                "position": "Executive Director",
-                "instagram": null,
-                "twitter": "https://twitter.com/jwedjennifer",
-                "linkedin": "https://www.linkedin.com/in/jenniferdroke",
-                "github": "https://github.com/jwedj"
-            },
             "Bibi Dang": {
                 "image": "bibi-dang.jpg",
                 "position": "Executive Director",
@@ -592,6 +584,22 @@
                 "twitter": null,
                 "linkedin": "https://www.linkedin.com/in/bibidang/",
                 "github": null
+            },
+            "Shelby Huffman": {
+                "image": "shelby-huffman.jpg",
+                "position": "Executive Director",
+                "instagram": "https://www.instagram.com/mr._.huffy",
+                "twitter": null,
+                "linkedin": "https://www.linkedin.com/in/shelbyhuffy",
+                "github": "https://github.com/Shleby"
+            },
+            "Jennifer Droke": {
+                "image": "jennifer-droke.jpg",
+                "position": "Honorable Director",
+                "instagram": null,
+                "twitter": "https://twitter.com/jwedjennifer",
+                "linkedin": "https://www.linkedin.com/in/jenniferdroke",
+                "github": "https://github.com/jwedj"
             },
             "Shihui Liu": {
                 "image": "shihui-liu.jpg",
@@ -609,13 +617,13 @@
                 "linkedin": "https://www.linkedin.com/in/josephparackal2021",
                 "github": null
             },
-            "Shelby Huffman": {
-                "image": "shelby-huffman.jpg",
+            "Reagan Shirk": {
+                "image": "reagan-shirk.jpg",
                 "position": "Operations Director",
-                "instagram": "https://www.instagram.com/mr._.huffy/",
-                "twitter": null,
-                "linkedin": "https://www.linkedin.com/in/shelbyhuffy/",
-                "github": "https://github.com/Shleby"
+                "instagram": "https://www.instagram.com/all_about_that_rage",
+                "twitter": "https://twitter.com/allboutthatrage",
+                "linkedin": "https://www.linkedin.com/in/reaganshirk/",
+                "github": "https://github.com/reaganshirk"
             },
             "Sam Fletcher": {
                 "image": "sam-fletcher.jpg",
@@ -688,14 +696,6 @@
                 "twitter": null,
                 "linkedin": null,
                 "github": null
-            },
-            "Reagan Shirk": {
-                "image": "reagan-shirk.jpg",
-                "position": "Operations Officer",
-                "instagram": "https://www.instagram.com/all_about_that_rage",
-                "twitter": "https://twitter.com/allboutthatrage",
-                "linkedin": "https://www.linkedin.com/in/reaganshirk/",
-                "github": "https://github.com/reaganshirk"
             },
             "Braiden Maggia": {
                 "image": "braiden-maggia.jpg",
