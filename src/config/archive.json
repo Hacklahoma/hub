@@ -573,7 +573,7 @@
     "participants": "350",
     "projects": "70",
     "ended": false,
-    "live": false,
+    "live": true,
     "devpost": null,
     "website": "https://2021.hacklahoma.org/",
     "team": {
