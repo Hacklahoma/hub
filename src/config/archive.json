@@ -570,7 +570,7 @@
   },
   "2021": {
     "color": "#FFEDC5",
-    "participants": "350",
+    "participants": "200",
     "projects": "70",
     "ended": false,
     "live": true,
@@ -720,14 +720,6 @@
         "twitter": null,
         "linkedin": null,
         "github": "https://github.com/sethgaglione"
-      },
-      "Grant Eckstein": {
-        "image": "grant-eckstein.jpg",
-        "position": "Web Developer",
-        "instagram": null,
-        "twitter": null,
-        "linkedin": null,
-        "github": null
       },
       "Rafal Jabrzemski": {
         "image": "drj.jpg",
