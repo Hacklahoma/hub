@@ -571,10 +571,10 @@
   "2021": {
     "color": "#FFEDC5",
     "participants": "200",
-    "projects": "70",
+    "projects": "40",
     "ended": false,
     "live": true,
-    "devpost": null,
+    "devpost": "https://hacklahoma21.devpost.com/",
     "website": "https://2021.hacklahoma.org/",
     "team": {
       "Bibi Dang": {
