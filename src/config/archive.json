@@ -570,10 +570,10 @@
   },
   "2021": {
     "color": "#FFEDC5",
-    "participants": "200",
-    "projects": "40",
-    "ended": false,
-    "live": true,
+    "participants": "188",
+    "projects": "45",
+    "ended": true,
+    "live": false,
     "devpost": "https://hacklahoma21.devpost.com/",
     "website": "https://2021.hacklahoma.org/",
     "team": {
