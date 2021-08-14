@@ -694,7 +694,7 @@
         "position": "Graphic Designer",
         "instagram": "https://www.instagram.com/jewl.ee",
         "twitter": null,
-        "linkedin": null,
+        "linkedin": "https://www.linkedin.com/in/julie-nguyen-87346b214/",
         "github": null
       },
       "Braiden Maggia": {
@@ -723,6 +723,137 @@
       },
       "Derryk Theberge": {
         "image": "derryk-theberge.jpg",
+        "position": "Web Developer",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": "https://www.linkedin.com/in/derryktheberge/",
+        "github": "https://github.com/dtheberge"
+      },
+      "Rafal Jabrzemski": {
+        "image": "drj.jpg",
+        "position": "Adult in Residence",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": null,
+        "github": null
+      }
+    }
+  },
+  "2022": {
+    "color": "#FFCB77",
+    "participants": "280",
+    "projects": "50",
+    "ended": false,
+    "live": false,
+    "devpost": null,
+    "website": null,
+    "team": {
+      "Jerrod Burns": {
+        "image": "jerrod-burns.jpg",
+        "position": "Executive Director",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": null,
+        "github": null
+      },
+      "Jennifer Ha": {
+        "image": "female.png",
+        "position": "Sponsoring & Finance Director",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": "https://www.linkedin.com/in/jennifer-ha-2651a11b9",
+        "github": null
+      },
+      "Julie Nguyen": {
+        "image": "julie-nguyen.jpg",
+        "position": "Marketing Director",
+        "instagram": "https://www.instagram.com/jewl.ee",
+        "twitter": null,
+        "linkedin": "https://www.linkedin.com/in/julie-nguyen-87346b214/",
+        "github": null
+      },
+      "Jillian Otero": {
+        "image": "jillian-otero.jpg",
+        "position": "Operations Director",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": null,
+        "github": null
+      },
+      "Seth Gaglione": {
+        "image": "seth-gaglione.jpg",
+        "position": "Technology Director",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": null,
+        "github": "https://www.github.com/sethgaglione/"
+      },
+      "Skyler Riggle": {
+        "image": "male.png",
+        "position": "Sponsor Liaison & Technology Coordinator",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": null,
+        "github": "https://github.com/SkylerRiggle"
+      },
+      "Madison Quiroga": {
+        "image": "female.png",
+        "position": "Public Relations Officer",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": null,
+        "github": null
+      },
+      "Nathan Wong": {
+        "image": "male.png",
+        "position": "Outreach Coordinator",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": null,
+        "github": null
+      },
+      "Loc Vu": {
+        "image": "male.png",
+        "position": "Graphic Designer",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": null,
+        "github": null
+      },
+      "Nicole Malunowicz": {
+        "image": "female.png",
+        "position": "Marketing Strategist",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": null,
+        "github": null
+      },
+      "Maria Doan": {
+        "image": "maria-doan.jpg",
+        "position": "Operations Officer",
+        "instagram": "https://www.instagram.com/maria.v.d",
+        "twitter": "https://twitter.com/maria_v_doan",
+        "linkedin": "https://linkedin.com/in/maria-doan-b377281b8",
+        "github": "https://github.com/mariadoan247"
+      },
+      "Tina Nguyen": {
+        "image": "female.png",
+        "position": "Operations Officer",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": null,
+        "github": null
+      },
+      "Derryk Theberge": {
+        "image": "derryk-theberge.jpg",
+        "position": "Web Developer",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": "https://www.linkedin.com/in/derryktheberge/",
+        "github": "https://github.com/dtheberge"
+      },
+      "Jacob Baber": {
+        "image": "male.png",
         "position": "Web Developer",
         "instagram": null,
         "twitter": null,
