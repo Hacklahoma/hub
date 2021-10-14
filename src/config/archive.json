@@ -757,7 +757,7 @@
         "github": null
       },
       "Jennifer Ha": {
-        "image": "female.png",
+        "image": "jennifer-ha.jpg",
         "position": "Sponsoring & Finance Director",
         "instagram": null,
         "twitter": null,
@@ -788,13 +788,13 @@
         "linkedin": null,
         "github": "https://www.github.com/sethgaglione/"
       },
-      "Skyler Riggle": {
-        "image": "male.png",
-        "position": "Sponsor Liaison & Technology Coordinator",
-        "instagram": null,
+      "Claire Nguyen": {
+        "image": "female.png",
+        "position": "Sponsor Liason",
+        "instagram": "https://www.instagram.com/clairenwn/",
         "twitter": null,
         "linkedin": null,
-        "github": "https://github.com/SkylerRiggle"
+        "github": "https://github.com/nguyenclaire/"
       },
       "Madison Quiroga": {
         "image": "female.png",
@@ -805,7 +805,7 @@
         "github": null
       },
       "Nathan Wong": {
-        "image": "male.png",
+        "image": "nathan-wong.jpeg",
         "position": "Outreach Coordinator",
         "instagram": null,
         "twitter": null,
@@ -846,15 +846,23 @@
       },
       "Derryk Theberge": {
         "image": "derryk-theberge.jpg",
-        "position": "Web Developer",
+        "position": "Technology Coordinato",
         "instagram": null,
         "twitter": null,
         "linkedin": "https://www.linkedin.com/in/derryktheberge/",
         "github": "https://github.com/dtheberge"
       },
-      "Jacob Baber": {
+      "Skyler Riggle": {
         "image": "male.png",
-        "position": "Web Developer",
+        "position": "Technology Coordinator",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": null,
+        "github": "https://github.com/SkylerRiggle"
+      },
+      "Jacob Baber": {
+        "image": "jacob-baber.jpeg",
+        "position": "Technology Coordinato",
         "instagram": null,
         "twitter": null,
         "linkedin": null,
