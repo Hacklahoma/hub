@@ -746,7 +746,7 @@
     "ended": false,
     "live": false,
     "devpost": null,
-    "website": null,
+    "website": "https://2022.hacklahoma.org/",
     "team": {
       "Jerrod Burns": {
         "image": "jerrod-burns.jpg",
@@ -796,6 +796,14 @@
         "linkedin": null,
         "github": "https://github.com/nguyenclaire/"
       },
+      "Rebekah Lee": {
+        "image": "female.png",
+        "position": "Sponsor Liason",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": null,
+        "github": null
+      },
       "Madison Quiroga": {
         "image": "female.png",
         "position": "Public Relations Officer",
@@ -820,6 +828,22 @@
         "linkedin": null,
         "github": null
       },
+      "Ted Xiong": {
+        "image": "male.png",
+        "position": "Graphic Designer",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": null,
+        "github": null
+      },
+      "Lana Nguyen": {
+        "image": "female.png",
+        "position": "Graphic Designer",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": null,
+        "github": null
+      },
       "Nicole Malunowicz": {
         "image": "female.png",
         "position": "Marketing Strategist",
@@ -838,6 +862,14 @@
       },
       "Tina Nguyen": {
         "image": "female.png",
+        "position": "Operations Officer",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": null,
+        "github": null
+      },
+      "Jacob Pierce": {
+        "image": "male.png",
         "position": "Operations Officer",
         "instagram": null,
         "twitter": null,
