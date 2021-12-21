@@ -243,6 +243,11 @@ function Navbar() {
     return general.BLMBanner;
   }
 
+  // Wheter registration is open
+  function isRegister() {
+    return general.registerBanner;
+  }
+
   // Renders the banner to join or to live site
   function renderBanner() {
     if (isLive()) {
@@ -268,6 +273,19 @@ function Navbar() {
         >
           <div className="banner green">
             <p>Apply to join the team!</p>
+          </div>
+        </a>
+      );
+    } if (isRegister()) {
+      return (
+        <a
+          href="https://register.hacklahoma.org"
+          rel="noopener noreferrer"
+          target="_blank"
+          alt=""
+        >
+          <div className="banner green">
+            <p>Registration is now open for Hacklahoma 2022!</p>
           </div>
         </a>
       );
@@ -322,7 +340,7 @@ function Navbar() {
   }
 
   return (
-    <StyledNavbar hasBanner={isJoin() || isLive() || isBLM()} isScrolled={isScrolled}>
+    <StyledNavbar hasBanner={isJoin() || isLive() || isBLM() || isRegister()} isScrolled={isScrolled}>
       {renderBanner()}
       <div className="background" />
       <div className="container">
