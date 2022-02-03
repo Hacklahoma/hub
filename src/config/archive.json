@@ -772,13 +772,13 @@
         "linkedin": "https://www.linkedin.com/in/julie-nguyen-87346b214/",
         "github": null
       },
-      "Jillian Otero": {
-        "image": "jillian-otero.jpg",
-        "position": "Operations Director",
-        "instagram": null,
-        "twitter": null,
-        "linkedin": null,
-        "github": null
+      "Maria Doan": {
+        "image": "maria-doan.jpg",
+        "position": "Operations Officer",
+        "instagram": "https://www.instagram.com/maria.v.d",
+        "twitter": "https://twitter.com/maria_v_doan",
+        "linkedin": "https://linkedin.com/in/maria-doan-b377281b8",
+        "github": "https://github.com/mariadoan247"
       },
       "Seth Gaglione": {
         "image": "seth-gaglione.jpg",
@@ -788,8 +788,16 @@
         "linkedin": null,
         "github": "https://www.github.com/sethgaglione/"
       },
+      "Jillian Otero": {
+        "image": "jillian-otero.jpg",
+        "position": "Honorable Director",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": null,
+        "github": null
+      },
       "Claire Nguyen": {
-        "image": "female.png",
+        "image": "claire-nguyen.png",
         "position": "Sponsor Liason",
         "instagram": "https://www.instagram.com/clairenwn/",
         "twitter": null,
@@ -797,7 +805,7 @@
         "github": "https://github.com/nguyenclaire/"
       },
       "Rebekah Lee": {
-        "image": "female.png",
+        "image": "rebekah-lee.png",
         "position": "Sponsor Liason",
         "instagram": null,
         "twitter": null,
@@ -805,7 +813,7 @@
         "github": null
       },
       "Madison Quiroga": {
-        "image": "female.png",
+        "image": "madison-quiroga.png",
         "position": "Public Relations Officer",
         "instagram": null,
         "twitter": null,
@@ -821,7 +829,7 @@
         "github": null
       },
       "Loc Vu": {
-        "image": "male.png",
+        "image": "loc-vu.png",
         "position": "Lead Graphic Designer",
         "instagram": null,
         "twitter": null,
@@ -829,7 +837,7 @@
         "github": null
       },
       "Ted Xiong": {
-        "image": "male.png",
+        "image": "ted-xiong.png",
         "position": "Graphic Designer",
         "instagram": null,
         "twitter": null,
@@ -837,7 +845,7 @@
         "github": null
       },
       "Lana Nguyen": {
-        "image": "female.png",
+        "image": "lana-nguyen.png",
         "position": "Graphic Designer",
         "instagram": null,
         "twitter": null,
@@ -845,23 +853,15 @@
         "github": null
       },
       "Nicole Malunowicz": {
-        "image": "female.png",
+        "image": "nicole-malunowicz.png",
         "position": "Marketing Strategist",
         "instagram": null,
         "twitter": null,
         "linkedin": null,
         "github": null
       },
-      "Maria Doan": {
-        "image": "maria-doan.jpg",
-        "position": "Operations Officer",
-        "instagram": "https://www.instagram.com/maria.v.d",
-        "twitter": "https://twitter.com/maria_v_doan",
-        "linkedin": "https://linkedin.com/in/maria-doan-b377281b8",
-        "github": "https://github.com/mariadoan247"
-      },
       "Tina Nguyen": {
-        "image": "female.png",
+        "image": "tina-nguyen.png",
         "position": "Operations Officer",
         "instagram": null,
         "twitter": null,
@@ -869,7 +869,7 @@
         "github": null
       },
       "Jacob Pierce": {
-        "image": "male.png",
+        "image": "jacob-pierce.png",
         "position": "Operations Officer",
         "instagram": null,
         "twitter": null,
