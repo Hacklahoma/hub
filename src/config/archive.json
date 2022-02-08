@@ -744,8 +744,8 @@
     "participants": "280",
     "projects": "50",
     "ended": false,
-    "live": false,
-    "devpost": null,
+    "live": true,
+    "devpost": "https://hacklahoma22.devpost.com/",
     "website": "https://2022.hacklahoma.org/",
     "team": {
       "Jerrod Burns": {
