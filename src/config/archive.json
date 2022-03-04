@@ -741,10 +741,10 @@
   },
   "2022": {
     "color": "#FFCB77",
-    "participants": "280",
-    "projects": "50",
-    "ended": false,
-    "live": true,
+    "participants": "102",
+    "projects": "26",
+    "ended": true,
+    "live": false,
     "devpost": "https://hacklahoma22.devpost.com/",
     "website": "https://2022.hacklahoma.org/",
     "team": {
