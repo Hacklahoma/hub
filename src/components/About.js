@@ -77,7 +77,7 @@ function About() {
       <div className="imageContent">
         <Parallax
           className="image"
-          bgImage={require('../images/about.png')}
+          bgImage={require('../images/about.jpeg')}
           bgImageStyle={{
             borderRadius: '8px',
             width:        '100%',
