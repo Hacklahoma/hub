@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Navbar from './Navbar';
 import cloud from '../../images/cloud.png';
+import Button from "../Button";
 
 const StyledHeader = styled.div`
     height: 800px;
@@ -47,6 +48,22 @@ const StyledHeader = styled.div`
                 width: 300px;
                 animation: plane 0.75s ease;
             }
+            h2{
+              animation: fade 1s;
+              position: absolute;
+              color: #19BB79;
+              left: 0;
+              margin-left: 20px;
+              top: 150px;
+              font-size: 1.5em;
+              font-family: "Bebas", "Avenir", "Helvetica Neue", sans-serif;
+              font-weight: lighter;
+            }
+            .buttons {
+               .Button {
+                 margin: 20px 5px 0 5px;
+               }
+          }
         }
     }
 
@@ -95,6 +112,8 @@ const StyledHeader = styled.div`
         }
     }
 `;
+
+
 
 const Clouds = styled.div`
     position: relative;
@@ -203,8 +222,12 @@ function Header() {
         <div className="brandContent">
           <img src={require('../../images/flyingLogo.png')} alt="logo" />
           <h1>Hacklahoma</h1>
+          <h2><Button
+              color="green">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfRXm-h0rIE5OLVswuKNgSEXTL4GrU-A3R088BGkN1MQ8zQug/viewform?usp=sf_link">Join our contact list!</a></Button></h2>
         </div>
       </div>
+
     </StyledHeader>
   );
 }
