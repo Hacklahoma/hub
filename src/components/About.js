@@ -14,7 +14,7 @@ const StyledAbout = styled.div`
             overflow: hidden;
             min-height: 200px;
             height: 30vw;
-            max-height: 340px;
+            max-height: 440px;
             width: 80vw;
             max-width: 850px;
             border-radius: 8px;
