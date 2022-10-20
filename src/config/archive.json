@@ -905,10 +905,10 @@
   "2023": {
     "color": "#F5F2E8",
     "participants": "300",
-    "projects": "300",
+    "projects": "60",
     "ended": false,
     "live": false,
-    "devpost": "https://hacklahoma23.devpost.com/",
+    "devpost": false,
     "website": "https://2023.hacklahoma.org/",
     "team": {
       "Nathanael Reese": {
@@ -927,10 +927,18 @@
         "linkedin": null,
         "github": null
       },
+      "Nick Stoia": {
+        "image": "nick.png",
+        "position": "Technology Director",
+        "instagram": "https://www.instagram.com/nickstoia1/",
+        "twitter": null,
+        "linkedin": "https://www.linkedin.com/in/nicholas-stoia-7bb3891a2/",
+        "github": null
+      },
       "Ali Nawaz": {
         "image": "ali.png",
         "position": "Sponsoring & Finance Director",
-        "instagram": null,
+        "instagram": "https://www.instagram.com/takecareali/",
         "twitter": null,
         "linkedin": null,
         "github": null
@@ -946,17 +954,9 @@
       "Quynh Nguyen": {
         "image": "quynh.png",
         "position": "Marketing Director",
-        "instagram": null,
+        "instagram": "https://www.instagram.com/quynhothy/",
         "twitter": null,
-        "linkedin": null,
-        "github": null
-      },
-      "Nick Stoia": {
-        "image": "nick.png",
-        "position": "Technology Director",
-        "instagram": null,
-        "twitter": null,
-        "linkedin": null,
+        "linkedin": "http://www.linkedin.com/in/quynh-h-nguyen",
         "github": null
       },
       "Kate Carbonell": {
@@ -964,13 +964,13 @@
         "position": "Web Coordinator",
         "instagram": null,
         "twitter": null,
-        "linkedin": null,
+        "linkedin": "https://www.linkedin.com/in/katie-carbonell-a77b3920b/",
         "github": null
       },
       "Linh Ngo": {
         "image": "linh.png",
         "position": "Discord Coordinator",
-        "instagram": null,
+        "instagram": "https://www.instagram.com/linhngoo_nvkl03/",
         "twitter": null,
         "linkedin": null,
         "github": null
@@ -996,16 +996,16 @@
         "position": "Logistics Officer",
         "instagram": null,
         "twitter": null,
-        "linkedin": null,
+        "linkedin": "http://www.linkedin.com/in/zain-chaudhry-4b601b228",
         "github": null
       },
       "Ahmed Raja": {
         "image": "ahmed.png",
         "position": "Operations Officer",
-        "instagram": null,
+        "instagram": "https://www.instagram.com/_rajie/",
         "twitter": null,
-        "linkedin": null,
-        "github": null
+        "linkedin": "https://www.linkedin.com/in/rtahmed",
+        "github": "https://www.github.com/Rajie04"
       },
       "Brandon Robertiello": {
         "image": "brandon.png",
