@@ -914,7 +914,7 @@
       "Nathanael Reese": {
         "image": "nate-2.png",
         "position": "Executive Director",
-        "instagram": null,
+        "instagram": "https://www.instagram.com/nathanael__reese/",
         "twitter": null,
         "linkedin": null,
         "github": null
@@ -1018,6 +1018,14 @@
       "Cecilia Pham": {
         "image": "cecilia.png",
         "position": "Graphic Designer",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": null,
+        "github": null
+      },
+      "Anindya Maiti": {
+        "image": "maiti.png",
+        "position": "Faculty Advisor",
         "instagram": null,
         "twitter": null,
         "linkedin": null,
