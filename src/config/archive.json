@@ -901,5 +901,128 @@
         "github": null
       }
     }
+  },
+  "2023": {
+    "color": "#F5F2E8",
+    "participants": "300",
+    "projects": "300",
+    "ended": false,
+    "live": false,
+    "devpost": "https://hacklahoma23.devpost.com/",
+    "website": "https://2023.hacklahoma.org/",
+    "team": {
+      "Nathanael Reese": {
+        "image": "nate-2.png",
+        "position": "Executive Director",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": null,
+        "github": null
+      },
+      "Madison Quiroga": {
+        "image": "madison-quiroga.png",
+        "position": "Executive Director",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": null,
+        "github": null
+      },
+      "Ali Nawaz": {
+        "image": "ali.png",
+        "position": "Sponsoring & Finance Director",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": null,
+        "github": null
+      },
+      "Fazil Raja": {
+        "image": "fazil.png",
+        "position": "Operations Director",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": null,
+        "github": null
+      },
+      "Quynh Nguyen": {
+        "image": "quynh.png",
+        "position": "Marketing Director",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": null,
+        "github": null
+      },
+      "Nick Stoia": {
+        "image": "nick.png",
+        "position": "Technology Director",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": null,
+        "github": null
+      },
+      "Kate Carbonell": {
+        "image": "kate.png",
+        "position": "Web Coordinator",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": null,
+        "github": null
+      },
+      "Linh Ngo": {
+        "image": "linh.png",
+        "position": "Discord Coordinator",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": null,
+        "github": null
+      },
+      "Melody Sharifi": {
+        "image": "melody.png",
+        "position": "Finance Liaison",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": null,
+        "github": null
+      },
+      "Rachelle Phipps": {
+        "image": "rachelle.png",
+        "position": "Graphic Designer",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": null,
+        "github": null
+      },
+      "Zain Chaudry": {
+        "image": "zain.png",
+        "position": "Logistics Officer",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": null,
+        "github": null
+      },
+      "Ahmed Raja": {
+        "image": "ahmed.png",
+        "position": "Operations Officer",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": null,
+        "github": null
+      },
+      "Brandon Robertiello": {
+        "image": "brandon.png",
+        "position": "Outreach Coordinator",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": null,
+        "github": null
+      },
+      "Cecilia Pham": {
+        "image": "cecilia.png",
+        "position": "Graphic Designer",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": null,
+        "github": null
+      }
+    }
   }
 }
