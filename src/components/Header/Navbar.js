@@ -266,13 +266,13 @@ function Navbar() {
     } if (isJoin()) {
       return (
         <a
-          href="https://join.hacklahoma.org"
+          href="https://linktr.ee/hacklahoma"
           rel="noopener noreferrer"
           target="_blank"
           alt=""
         >
           <div className="banner green">
-            <p>Apply to join the team!</p>
+            <p>Connect with us!</p>
           </div>
         </a>
       );
@@ -285,7 +285,7 @@ function Navbar() {
           alt=""
         >
           <div className="banner green">
-            <p>Registration is now open for Hacklahoma 2022!</p>
+            <p>Registration is now open for Hacklahoma 2023!</p>
           </div>
         </a>
       );
