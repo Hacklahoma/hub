@@ -346,7 +346,7 @@ function Navbar() {
       <div className="container">
         <div className="content">
           <div onClick={() => smoothScrollTo('#')} className="logo">
-            <img src={require('../../images/logo.png')} alt="" />
+            <img src={require('../../images/scissor-logo.png')} alt="" />
           </div>
           {isMobile ? (
             <div>

@@ -49,7 +49,7 @@ function Footer() {
     <StyledFooter id="Footer">
       <Contact />
       <img className="trees" src={require('../../images/footerTrees.png')} alt="trees" />
-      <img className="flyingLogo" src={require('../../images/flyingLogo.png')} alt="logo" />
+      <img className="flyingLogo" src={require('../../images/scissor-logo.png')} alt="logo" />
       <Copyright />
     </StyledFooter>
   );
