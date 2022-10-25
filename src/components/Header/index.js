@@ -151,7 +151,7 @@ const Clouds = styled.div`
         animation-delay: -0.4s;
         .cloud {
             left: 74%;
-            top: 200px;
+            top: 400px;
             animation: cloud2 4s infinite alternate ease-in-out;
             float: right;
         }
@@ -220,7 +220,7 @@ function Header() {
           </div>
         </Clouds>
         <div className="brandContent">
-          <img src={require('../../images/flyingLogo.png')} alt="logo" />
+          <img src={require('../../images/scissor-logo.png')} alt="logo" />
           <h1>Hacklahoma</h1>
           <h2><Button
               color="green">
