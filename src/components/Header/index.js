@@ -4,6 +4,8 @@ import Navbar from './Navbar';
 import cloud from '../../images/cloud.png';
 import Button from "../Button";
 
+let isLightMode = true;
+
 const StyledHeader = styled.div`
     height: 800px;
     color: white;
@@ -115,6 +117,46 @@ const StyledHeader = styled.div`
 
 
 
+const ToggleButton = styled.div`
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    padding: 0 20px;
+  }
+
+  main {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px;
+  }
+
+  p {
+    text-align: left;
+    padding: 0 20px;
+  }
+
+  code {
+    color: firebrick;
+  }
+
+  .darkToggle {
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    background: white;
+    border-radius: 5px;
+    border: 2px solid #555;
+  }
+
+  .darkToggle:checked {
+    background: #333;
+  }
+
+  .dark {
+    color: white;
+    background: #444;
+  }
+`;
 const Clouds = styled.div`
     position: relative;
     margin-top: 102px; /* (constant * navbar height) */
@@ -205,7 +247,10 @@ const Clouds = styled.div`
 function Header() {
   return (
     <StyledHeader>
-      <img className="cover" src={require('../../images/headerBackground.svg')} alt="" />
+      {isLightMode?
+          <img className="cover" src={require('../../images/headerBackground.svg')} alt="" />
+          : <img className="cover" src={require('../../images/instagram.svg')} alt="" />
+      }
       <Navbar />
       <div className="content">
         <Clouds>
@@ -224,7 +269,7 @@ function Header() {
           <h1>Hacklahoma</h1>
           <h2><Button
               color="green">
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfRXm-h0rIE5OLVswuKNgSEXTL4GrU-A3R088BGkN1MQ8zQug/viewform?usp=sf_link">Join our contact list!</a></Button></h2>
+            <a href="https://2023.hacklahoma.org/">Check out Hacklahoma 2023!</a></Button></h2>
         </div>
       </div>
 
