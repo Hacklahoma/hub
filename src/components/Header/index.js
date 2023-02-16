@@ -4,7 +4,6 @@ import Navbar from './Navbar';
 import cloud from '../../images/cloud.png';
 import Button from "../Button";
 
-let isLightMode = true;
 
 const StyledHeader = styled.div`
     height: 800px;
@@ -117,46 +116,7 @@ const StyledHeader = styled.div`
 
 
 
-const ToggleButton = styled.div`
-  body {
-    font-family: Arial, sans-serif;
-    font-size: 20px;
-    padding: 0 20px;
-  }
 
-  main {
-    text-align: center;
-    margin: 0 auto;
-    max-width: 800px;
-  }
-
-  p {
-    text-align: left;
-    padding: 0 20px;
-  }
-
-  code {
-    color: firebrick;
-  }
-
-  .darkToggle {
-    appearance: none;
-    width: 30px;
-    height: 30px;
-    background: white;
-    border-radius: 5px;
-    border: 2px solid #555;
-  }
-
-  .darkToggle:checked {
-    background: #333;
-  }
-
-  .dark {
-    color: white;
-    background: #444;
-  }
-`;
 const Clouds = styled.div`
     position: relative;
     margin-top: 102px; /* (constant * navbar height) */
@@ -247,10 +207,7 @@ const Clouds = styled.div`
 function Header() {
   return (
     <StyledHeader>
-      {isLightMode?
-          <img className="cover" src={require('../../images/headerBackground.svg')} alt="" />
-          : <img className="cover" src={require('../../images/instagram.svg')} alt="" />
-      }
+      <img className="cover" src={require('../../images/headerBackground.svg')} alt="" />
       <Navbar />
       <div className="content">
         <Clouds>
