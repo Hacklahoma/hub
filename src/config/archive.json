@@ -904,11 +904,11 @@
   },
   "2023": {
     "color": "#F5F2E8",
-    "participants": "300",
-    "projects": "60",
-    "ended": false,
+    "participants": "175",
+    "projects": "32",
+    "ended": true,
     "live": false,
-    "devpost": false,
+    "devpost": "https://https://hacklahoma-2023.devpost.com/",
     "website": "https://2023.hacklahoma.org/",
     "team": {
       "Nathanael Reese": {
