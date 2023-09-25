@@ -44,7 +44,7 @@ function Contact() {
       <h1>Contact Our Team</h1>
       <p>
         We'd love to hear from you! Contact us at{' '}
-        <a href="mailto:team@hacklahoma.org">team@hacklahoma.org</a> or through social
+        <a href="mailto:hacklahoma@ou.edu">hacklahoma@ou.edu</a> or through social
         media. We even welcome suggestions! Send us what you’d like to see at our next
         event.
       </p>
