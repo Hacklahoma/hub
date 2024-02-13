@@ -1041,17 +1041,17 @@
       }
     }
   },
-  "2023": {
+  "2024": {
     "color": "#F2F6E9",
     "participants": "182",
     "projects": "41",
-    "ended": true,
+    "ended": false,
     "live": false,
     "devpost": "https://hacklahoma-2024.devpost.com/",
     "website": "https://2024.hacklahoma.org/",
     "team": {
-      "Rafal Jabrzemski": {
-        "image": "drj.jpg",
+      "Luke Kirk": {
+        "image": "test.jpeg",
         "position": "Adult in Residence",
         "instagram": null,
         "twitter": null,
