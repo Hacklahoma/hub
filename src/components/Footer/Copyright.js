@@ -11,7 +11,7 @@ const StyledCopyright = styled.div`
 `;
 
 function Copyright() {
-  return <StyledCopyright>Copyright © 2021-2023 Hacklahoma ~ Made with ♡ in Norman</StyledCopyright>;
+  return <StyledCopyright>Copyright © 2021-2024 Hacklahoma ~ Made with ♡ in Norman</StyledCopyright>;
 }
 
 export default Copyright;
