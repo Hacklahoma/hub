@@ -1050,14 +1050,38 @@
     "devpost": "https://hacklahoma-2024.devpost.com/",
     "website": "https://2024.hacklahoma.org/",
     "team": {
-      "Luke Kirk": {
-        "image": "test.jpeg",
-        "position": "Adult in Residence",
+      "Quynh Nguyen": {
+        "image": "quynh.png",
+        "position": "Co-Executive Director",
         "instagram": null,
         "twitter": null,
         "linkedin": null,
         "github": null
-      }
+      },
+      "Melody Sharifi": {
+        "image": "melody.png",
+        "position": "Co-Executive Director",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": null,
+        "github": null
+      },
+      "Luke Kirk": {
+        "image": "male.png",
+        "position": "Technology Director",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": null,
+        "github": null
+      },
+      "Ahmed Raja": {
+        "image": "ahmed.png",
+        "position": "Operations Director",
+        "instagram": "https://www.instagram.com/_rajie/",
+        "twitter": null,
+        "linkedin": "https://www.linkedin.com/in/rtahmed",
+        "github": "https://www.github.com/Rajie04"
     }
+  }
   }
 }
