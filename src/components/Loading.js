@@ -106,6 +106,7 @@ function Loading() {
         <div className="ball" />
         <div className="ball" />
         <div className="ball" />
+        <div className="ball" />
       </div>
     </StyledLoading>
   );
