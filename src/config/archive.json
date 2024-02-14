@@ -1066,6 +1066,22 @@
         "linkedin": "https://www.linkedin.com/in/melodysharifi",
         "github": null
       },
+      "Ahmed Raja": {
+        "image": "ahmed.png",
+        "position": "Operations Director",
+        "instagram": "https://www.instagram.com/_rajie/",
+        "twitter": null,
+        "linkedin": "https://www.linkedin.com/in/rtahmed",
+        "github": "https://www.github.com/Rajie04"
+      },
+      "Aliyan Raja": {
+        "image": "male.png",
+        "position": "Sponsoring and Finance Director",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": null,
+        "github": null
+      },
       "Luke Kirk": {
         "image": "male.png",
         "position": "Technology Director",
@@ -1074,13 +1090,13 @@
         "linkedin": null,
         "github": null
       },
-      "Ahmed Raja": {
-        "image": "ahmed.png",
-        "position": "Operations Director",
-        "instagram": "https://www.instagram.com/_rajie/",
+      "Pundit Vorakitolan": {
+        "image": "male.png",
+        "position": "Marketing Director",
+        "instagram": "https://www.instagram.com/pundit.vorakitolan/",
         "twitter": null,
-        "linkedin": "https://www.linkedin.com/in/rtahmed",
-        "github": "https://www.github.com/Rajie04"
+        "linkedin": "https://www.linkedin.com/in/pundit-vorakitolan",
+        "github": null
       },
       "Ali Nawaz": {
         "image": "male.png",
@@ -1130,21 +1146,13 @@
         "linkedin": null,
         "github": null
       },
-      "Jake Tran": {
+      "Jake (Tu) Tran": {
         "image": "male.png",
         "position": "Operations Officer",
         "instagram": " https://www.instagram.com/hyji916/",
         "twitter": null,
         "linkedin": "https://www.linkedin.com/in/tu-tran-302bb226b/",
         "github": " https://github.com/hyji916"
-      },
-      "Aliyan Raja": {
-        "image": "male.png",
-        "position": "Sponsoring and Finance Director",
-        "instagram": null,
-        "twitter": null,
-        "linkedin": null,
-        "github": null
       },
       "Ameer Ghazal": {
         "image": "male.png",
@@ -1193,14 +1201,6 @@
         "twitter": " https://x.com/MABD214",
         "linkedin": "https://www.linkedin.com/in/mabdelnaby1",
         "github": "https://github.com/MohamedHAbdelnaby"
-      },
-      "Pundit Vorakitolan": {
-        "image": "male.png",
-        "position": "Marketing Director",
-        "instagram": "https://www.instagram.com/pundit.vorakitolan/",
-        "twitter": null,
-        "linkedin": "https://www.linkedin.com/in/pundit-vorakitolan",
-        "github": null
       },
       "Kyra Liu": {
         "image": "female.png",
