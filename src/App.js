@@ -13,6 +13,12 @@ const StyledApp = styled.div`
  * Controls main viewport of webapp
  */
 function App() {
+    useEffect(() => {
+        if (window.location.pathname === '/apply') { // redirect from hacklahoma.org/apply to below link
+            window.location.replace('https://forms.gle/c17PbYcmw9NbkddLA');
+        }
+    }, []);
+
   return (
     <StyledApp>
       {/* Renders header */}
