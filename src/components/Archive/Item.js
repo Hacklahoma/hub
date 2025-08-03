@@ -91,6 +91,7 @@ class Item extends React.Component {
   }
 
   render() {
+     console.log("Rendering item for year:", this.props.year); 
     return (
       <StyledItem id={this.props.year}>
         <div className="item-container">

@@ -2,7 +2,7 @@ import React from 'react';
 import animateScrollTo from 'animated-scroll-to';
 import styled from 'styled-components';
 import Item from './Item';
-import archive from '../../config/archive';
+import archive from '../../config/archive.json';
 
 const StyledArchive = styled.div`
     margin-top: 100px;
