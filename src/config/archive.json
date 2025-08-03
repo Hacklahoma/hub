@@ -1242,6 +1242,194 @@
         "linkedin": "https://www.linkedin.com/in/anindyamaiti/",
         "github": "https://github.com/anindyamaiti"
       }
-  }
+   }
+  },
+  "2025": {
+    "color": "#b7eaf8",
+    "participants": "232",
+    "projects": "73",
+    "ended": true,
+    "live": false,
+    "devpost": "https://hacklahoma-2025.devpost.com/",
+    "website": "https://2025.hacklahoma.org/",
+    "team": {
+      "Quynh Nguyen": {
+        "image": "QuynhNguyen2025.jpg",
+        "position": "Co-Executive Director",
+        "instagram": "https://www.instagram.com/quynhothy/",
+        "twitter": null,
+        "linkedin": "https://www.linkedin.com/in/quynh-h-nguyen/",
+        "github": "https://github.com/quynnie"
+      },
+      "Melody Sharifi": {
+        "image": "MelodyS2025.JPG",
+        "position": "Co-Executive Director",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": "https://www.linkedin.com/in/melodysharifi",
+        "github": null
+      },
+      "Ahmed Raja": {
+        "image": "AhmedRaja2025.jpeg",
+        "position": "Operations Director",
+        "instagram": "https://www.instagram.com/_rajie/",
+        "twitter": null,
+        "linkedin": "https://www.linkedin.com/in/rtahmed",
+        "github": "https://www.github.com/Rajie04"
+      },
+      "Ameer Ghazal": {
+        "image": "AmeerG2025.jpg",
+        "position": "Sponsoring Director",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": null,
+        "github": null
+      },
+      "Mohamed Abdelnaby": {
+        "image": "Mohamed.png",
+        "position": "Technology Director",
+        "instagram": "https://www.instagram.com/mabd214/",
+        "twitter": " https://x.com/MABD214",
+        "linkedin": "https://www.linkedin.com/in/mabdelnaby1",
+        "github": "https://github.com/MohamedHAbdelnaby"
+      }, 
+      "Pundit Vorakitolan": {
+        "image": "Pundit2025.JPG",
+        "position": "Marketing Director",
+        "instagram": "https://www.instagram.com/pundit.vorakitolan/",
+        "twitter": null,
+        "linkedin": "https://www.linkedin.com/in/pundit-vorakitolan",
+        "github": null
+      },
+      "Tony Hoang": {
+        "image": "TonyH2025.JPG",
+        "position": "Operations Officer",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": null,
+        "github": null
+      },
+      "Maryam Amin": {
+        "image": "MaryamAmin2025.JPG",
+        "position": "Operations Officer",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": null,
+        "github": null
+      },
+      "Jake Tran": {
+        "image": "JakeTran2025.jpeg",
+        "position": "Operations Officer",
+        "instagram": " https://www.instagram.com/hyji916/",
+        "twitter": null,
+        "linkedin": "https://www.linkedin.com/in/tu-tran-302bb226b/",
+        "github": " https://github.com/hyji916"
+      },
+      "Melissa Ng": {
+        "image": "MelissaNg2025.jpeg",
+        "position": "Operations Officer",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": null,
+        "github": null
+      },
+      "Ethan Nguyen": {
+        "image": "EthanNguyen2025.jpeg",
+        "position": "Operations Officer",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": null,
+        "github": null
+      },
+      "Lyndsey Dong": {
+        "image": "LyndseyD2025.jpg",
+        "position": "Operations Officer",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": null,
+        "github": null
+      },
+      "Ali Nawaz": {
+        "image": "AliN2025.jpg",
+        "position": "Operations Officer",
+        "instagram":"https://www.instagram.com/alihaqnawazz/" ,
+        "twitter": null,
+        "linkedin": "https://www.linkedin.com/in/alinawaz04/",
+        "github":" https://github.com/alinawaz04"
+      },
+      "Allymar Khrais": {
+        "image": "Allymar2025.JPG",
+        "position": "Operations Officer",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": null,
+        "github": null
+      },
+      "Brandon Robertiello": {
+        "image": "BrandonR2025.JPG",
+        "position": "Web Developer",
+        "instagram": "https://www.instagram.com/b_robertiello/",
+        "twitter": null,
+        "linkedin": "https://www.linkedin.com/in/brandon-robertiello/",
+        "github": null
+      },
+      "Nhu Van": {
+        "image": "NhuVan2025.jpeg",
+        "position": "Web Developer",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": null,
+        "github": null
+      },
+      "Lucas Ho": {
+        "image": "LucasH2025.JPG",
+        "position": "Web Developer",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": null,
+        "github": null
+      },
+      "Usman Syed": {
+        "image": "UsmanSyed2025.jpg",
+        "position": "Web Developer",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": null,
+        "github": null
+      },
+      "Janes Le": {
+        "image": "JanesLe2025.jpg",
+        "position": "Marketing & Social Media",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": null,
+        "github": null
+      },
+      "Lily Luc": {
+        "image": "LilyL2025.JPG",
+        "position": "Graphic Designer",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": null,
+        "github": null
+      },
+      "Chad Kim": {
+        "image": "ChadK2025.JPG",
+        "position": "Graphic Designer",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": null,
+        "github": null
+      },
+      "Anindya Maiti": {
+        "image": "Maiti2024-1.webp",
+        "position": "Faculty Advisor",
+        "instagram": "https://www.instagram.com/anmaiti",
+        "twitter":  "https://twitter.com/anindyamaiti",
+        "linkedin": "https://www.linkedin.com/in/anindyamaiti/",
+        "github": "https://github.com/anindyamaiti"
+      }
+
+    }
   }
 }
