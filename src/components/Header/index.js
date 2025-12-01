@@ -226,7 +226,7 @@ function Header() {
           <h1>Hacklahoma</h1>
           <h2><Button
               color="green">
-            <a href="https://2025.hacklahoma.org/">Check out Hacklahoma 2025!</a></Button></h2>
+            <a href="https://2026.hacklahoma.org/">Check out Hacklahoma 2026!</a></Button></h2>
         </div>
       </div>
 
