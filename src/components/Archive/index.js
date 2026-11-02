@@ -101,6 +101,7 @@ class Archive extends React.Component {
             <Item
               year={key}
               color={archive[key].color}
+              background={archive[key].background}
               participants={archive[key].participants}
               projects={archive[key].projects}
               ended={archive[key].ended}

@@ -1431,5 +1431,241 @@
       }
 
     }
+  },
+  "2026": {
+    "color": "#FFFEF2",
+    "background": "background2026.webp",
+    "participants": "225",
+    "projects": "67",
+    "ended": true,
+    "live": false,
+    "devpost": "https://hacklahoma-2026.devpost.com/",
+    "website": "https://2026.hacklahoma.org/",
+    "team": {
+      "Melody Sharifi": {
+        "image": "MelodyS2025.JPG",
+        "position": "Executive Director",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": "https://www.linkedin.com/in/melodysharifi",
+        "github": null
+      },
+      "Ahmed Raja": {
+        "image": "AhmedRaja2025.jpeg",
+        "position": "Executive Director",
+        "instagram": "https://www.instagram.com/_rajie/",
+        "twitter": null,
+        "linkedin": "https://www.linkedin.com/in/rtahmed",
+        "github": "https://www.github.com/Rajie04"
+      },
+      "Pundit Vorakitolan": {
+        "image": "Pundit2025.JPG",
+        "position": "Marketing Director",
+        "instagram": "https://www.instagram.com/pundit.vorakitolan/",
+        "twitter": null,
+        "linkedin": "https://www.linkedin.com/in/pundit-vorakitolan",
+        "github": null
+      },
+      "Nhu Van": {
+        "image": "NhuVan2025.jpeg",
+        "position": "Technology Director",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": null,
+        "github": null
+      },
+      "Allymar Khrais": {
+        "image": "Allymar2025.JPG",
+        "position": "Operations Director",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": null,
+        "github": null
+      },
+      "Maryam Amin": {
+        "image": "MaryamAmin2025.JPG",
+        "position": "Sponsoring Director",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": null,
+        "github": null
+      },
+      "Brandon Robertiello": {
+        "image": "BrandonR2025.JPG",
+        "position": "Tech Officer",
+        "instagram": "https://www.instagram.com/b_robertiello/",
+        "twitter": null,
+        "linkedin": "https://www.linkedin.com/in/brandon-robertiello/",
+        "github": "https://github.com/brobertiello"
+      },
+      "Melissa Ng": {
+        "image": "MelissaNg2025.jpeg",
+        "position": "Tech Officer",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": null,
+        "github": null
+      },
+      "Max Acevedo": {
+        "image": "placeholder.png",
+        "position": "Tech Officer",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": null,
+        "github": null
+      },
+      "Bryan Ho": {
+        "image": "placeholder.png",
+        "position": "Tech Officer",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": null,
+        "github": null
+      },
+      "Chad Kim": {
+        "image": "ChadK2025.JPG",
+        "position": "Marketing Officer",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": null,
+        "github": null
+      },
+      "Kyra Liu": {
+        "image": "Kyra2025.jpg",
+        "position": "Marketing Officer",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": null,
+        "github": null
+      },
+      "Janes Le": {
+        "image": "JanesLe2025.jpg",
+        "position": "Marketing Officer",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": null,
+        "github": null
+      },
+      "Usman Syed": {
+        "image": "UsmanSyed2025.jpg",
+        "position": "Operations Officer",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": null,
+        "github": null
+      },
+      "Janeth Loera": {
+        "image": "placeholder.png",
+        "position": "Operations Officer",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": null,
+        "github": null
+      },
+      "Tony Hoang": {
+        "image": "TonyH2025.JPG",
+        "position": "Operations Officer",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": null,
+        "github": null
+      },
+      "Lyndsey Dong": {
+        "image": "LyndseyD2025.jpg",
+        "position": "Operations Officer",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": null,
+        "github": null
+      },
+      "Lucas Ho": {
+        "image": "LucasH2025.JPG",
+        "position": "Operations Officer",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": null,
+        "github": null
+      },
+      "Ali Nawaz": {
+        "image": "AliN2025.jpg",
+        "position": "Operations Officer",
+        "instagram": "https://www.instagram.com/alihaqnawazz/",
+        "twitter": null,
+        "linkedin": "https://www.linkedin.com/in/alinawaz04/",
+        "github": "https://github.com/alinawaz04"
+      },
+      "Angelina Lang": {
+        "image": "placeholder.png",
+        "position": "Sponsoring Officer",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": null,
+        "github": null
+      },
+      "Mohammad Mian": {
+        "image": "placeholder.png",
+        "position": "Sponsoring Officer",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": null,
+        "github": null
+      },
+      "Rayaan Raza": {
+        "image": "placeholder.png",
+        "position": "Sponsoring Officer",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": null,
+        "github": null
+      },
+      "Hassan Zahid": {
+        "image": "placeholder.png",
+        "position": "Intern",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": null,
+        "github": null
+      },
+      "Keianna Taheri": {
+        "image": "placeholder.png",
+        "position": "Intern",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": null,
+        "github": null
+      },
+      "Haroon": {
+        "image": "placeholder.png",
+        "position": "Operations Officer",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": null,
+        "github": null
+      },
+      "Jordon": {
+        "image": "placeholder.png",
+        "position": "Operations Officer",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": null,
+        "github": null
+      },
+      "Sean McKay": {
+        "image": "placeholder.png",
+        "position": "Faculty Advisor",
+        "instagram": null,
+        "twitter": null,
+        "linkedin": null,
+        "github": null
+      },
+      "Anindya Maiti": {
+        "image": "Maiti2024-1.webp",
+        "position": "Faculty Advisor",
+        "instagram": "https://www.instagram.com/anmaiti",
+        "twitter": "https://twitter.com/anindyamaiti",
+        "linkedin": "https://www.linkedin.com/in/anindyamaiti/",
+        "github": "https://github.com/anindyamaiti"
+      }
+    }
   }
 }

@@ -285,7 +285,7 @@ function Navbar() {
           alt=""
         >
           <div className="banner green">
-            <p>Registration is now open for Hacklahoma 2024!</p>
+            <p>Registration is now open for Hacklahoma 2027!</p>
           </div>
         </a>
       );

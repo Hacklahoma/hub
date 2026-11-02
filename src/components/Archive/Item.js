@@ -45,6 +45,8 @@ const StyledItem = styled.div`
             transition: filter 250ms;
             img {
                 height: 70%;
+                max-width: 35%;
+                object-fit: contain;
             }
             &:hover {
                 filter: brightness(95%);
@@ -109,13 +111,18 @@ class Item extends React.Component {
           {/* card */}
           <div
             onClick={this.handleClick}
-            style={{ background: this.props.color }}
+            style={{
+              background: this.props.background
+                ? `${this.props.color} url(${require(`../../images/${this.props.background}`)}) center / cover`
+                : this.props.color,
+            }}
             className="card"
           >
             {/* logo */}
             <img
               src={require(`../../images/logo${this.props.year}.png`)}
               alt={`${this.props.year} logo`}
+              style={this.props.background ? { transform: 'translateY(-10px)' } : undefined}
             />
           </div>
         </div>
